@@ -2,6 +2,20 @@
 MVPANI: A Toolkit With Friendly Graphical User Interface for Multivariate Pattern Analysis of Neuroimaging Data
 
 # Getting started
+Once MVPANIV1.0 has been downloaded to your computer, use SetPath in MATLAB to add the entire MVPANIV1.0 folder to the path list as follows:
+
+(1) Unzip `MVPANIV` to a directory on your disk, assuming the directory is: `F:\MVPA\MVPANI_V1.0` after unzipping;
+
+(2) Open MATLAB, `HOME` → `SetPath`;
+
+(3) Click `Add with Subfolders` and select the MVPANIV1.0 folder (i.e. `F:\MVPA\MVPANI_V1.0`);
+
+(4) Click `Save`.
+
+(5) Enter `MVPANI` in the MATLAB Command Window to launch the main interface of MVPANI
+
+![image](https://user-images.githubusercontent.com/96582833/147314503-34cab316-8f61-4cae-82a4-73bd582733e5.png)
+
 All the documentation is in [mannual](https://github.com/pymnn/MVPANI/tree/main/mannual).
 
 # Credits
