@@ -1,0 +1,47 @@
+OPEN BUGS
+
+B19: output "other" generates an error when correlation_classifier is used.
+
+B18: At some positions, the code is optimized for .img and .hdr, but it 
+cannot deal with .nii. Not clear what this does with results. Get the file 
+extension online, store in cfg and use in decoding_write_results
+
+B16: All methods that use current_data in decoding_transform_results 
+assume that
+(a) all used data is the same in all decoding iterations AND
+(b) the data is not changed through processes such as feature_selection!
+The latter problem can be solved easily if we assume that all data is used.
+Then we just need to add current_data_used and combine data_train and 
+data_test together. However, since this can vary, the only reasonable 
+solution seems to be to pass data for all steps separately and to pass 
+all indices for all steps, too, and put things together in the method that
+transforms the results OR to carry out transformation already at an earlier 
+step (which is not an option because of speed and many modifications)
+
+B5: Using the CORRELATION CLASSIFIER (MVPA) with more than two trials per 
+run generates an error. Need to correct the last line of MVPA and true 
+labels or better make it possible to test MVPA trialwise, i.e. with more 
+than one trial per run  (the correlation will be calculated with all left 
+out trials, possibly  putting half in one and the other half in the other 
+condition. 
+Question: Then again what happens with unbalanced test data (which is 
+valid).
+
+B7: When disconnected data are used with the online plotting function, 
+they are not plotted correctly
+
+B8: In the online plotting function, no brain is shown when ROI is used 
+rather than searchlight
+
+B10: Combination of scaling and parameter selection doesn't work, 
+see run_nest in decoding_parameter_selection
+
+B12: make_design_boot_cv.m does not work for one chunk only. Need to check 
+if it can be adapted or if a new function is needed.
+
+B15: When data is scaled on the fly (e.g. for 'across'), this is not 
+used in decoding_generate_output and thus may yield wrong results for 
+methods that use data there
+
+B17: Online plotting doesn't work for passed data on simulated data when 
+not all voxels are used.

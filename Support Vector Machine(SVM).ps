@@ -1,0 +1,8805 @@
+%!PS-Adobe-3.0
+%%Creator: (MATLAB, The Mathworks, Inc. Version 8.6.0.267246 \(R2015b\). Operating System: Windows 7)
+%%Title: (./Support Vector Machine\(SVM\).ps)
+%%CreationDate: 2019-01-20T19:51:49
+%%Pages: (atend)
+%%BoundingBox:    10     7   646   663
+%%LanguageLevel: 3
+%%EndComments
+%%BeginDefaults
+%%EndDefaults
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+%%BeginResource: procset (Apache XML Graphics Std ProcSet) 1.2 0
+%%Version: 1.2 0
+%%Copyright: (Copyright 2001-2003,2010 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+/bd{bind def}bind def
+/ld{load def}bd
+/GR/grestore ld
+/M/moveto ld
+/LJ/setlinejoin ld
+/C/curveto ld
+/f/fill ld
+/LW/setlinewidth ld
+/GC/setgray ld
+/t/show ld
+/N/newpath ld
+/CT/concat ld
+/cp/closepath ld
+/S/stroke ld
+/L/lineto ld
+/CC/setcmykcolor ld
+/A/ashow ld
+/GS/gsave ld
+/RC/setrgbcolor ld
+/RM/rmoveto ld
+/ML/setmiterlimit ld
+/re {4 2 roll M
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+cp } bd
+/_ctm matrix def
+/_tm matrix def
+/BT { _ctm currentmatrix pop matrix _tm copy pop 0 0 moveto } bd
+/ET { _ctm setmatrix } bd
+/iTm { _ctm setmatrix _tm concat } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/ux 0.0 def
+/uy 0.0 def
+/F {
+  /Tp exch def
+  /Tf exch def
+  Tf findfont Tp scalefont setfont
+  /cf Tf def  /cs Tp def
+} bd
+/ULS {currentpoint /uy exch def /ux exch def} bd
+/ULE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add moveto  Tcx uy To add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/OLE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs add moveto Tcx uy To add cs add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/SOE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs 10 mul 26 idiv add moveto Tcx uy To add cs 10 mul 26 idiv add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/QT {
+/Y22 exch store
+/X22 exch store
+/Y21 exch store
+/X21 exch store
+currentpoint
+/Y21 load 2 mul add 3 div exch
+/X21 load 2 mul add 3 div exch
+/X21 load 2 mul /X22 load add 3 div
+/Y21 load 2 mul /Y22 load add 3 div
+/X22 load /Y22 load curveto
+} bd
+/SSPD {
+dup length /d exch dict def
+{
+/v exch def
+/k exch def
+currentpagedevice k known {
+/cpdv currentpagedevice k get def
+v cpdv ne {
+/upd false def
+/nullv v type /nulltype eq def
+/nullcpdv cpdv type /nulltype eq def
+nullv nullcpdv or
+{
+/upd true def
+} {
+/sametype v type cpdv type eq def
+sametype {
+v type /arraytype eq {
+/vlen v length def
+/cpdvlen cpdv length def
+vlen cpdvlen eq {
+0 1 vlen 1 sub {
+/i exch def
+/obj v i get def
+/cpdobj cpdv i get def
+obj cpdobj ne {
+/upd true def
+exit
+} if
+} for
+} {
+/upd true def
+} ifelse
+} {
+v type /dicttype eq {
+v {
+/dv exch def
+/dk exch def
+/cpddv cpdv dk get def
+dv cpddv ne {
+/upd true def
+exit
+} if
+} forall
+} {
+/upd true def
+} ifelse
+} ifelse
+} if
+} ifelse
+upd true eq {
+d k v put
+} if
+} if
+} if
+} forall
+d length 0 gt {
+d setpagedevice
+} if
+} bd
+%%EndResource
+%%BeginResource: procset (Apache XML Graphics EPS ProcSet) 1.0 0
+%%Version: 1.0 0
+%%Copyright: (Copyright 2002-2003 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+/BeginEPSF { %def
+/b4_Inc_state save def         % Save state for cleanup
+/dict_count countdictstack def % Count objects on dict stack
+/op_count count 1 sub def      % Count objects on operand stack
+userdict begin                 % Push userdict on dict stack
+/showpage { } def              % Redefine showpage, { } = null proc
+0 setgray 0 setlinecap         % Prepare graphics state
+1 setlinewidth 0 setlinejoin
+10 setmiterlimit [ ] 0 setdash newpath
+/languagelevel where           % If level not equal to 1 then
+{pop languagelevel             % set strokeadjust and
+1 ne                           % overprint to their defaults.
+{false setstrokeadjust false setoverprint
+} if
+} if
+} bd
+/EndEPSF { %def
+count op_count sub {pop} repeat            % Clean up stacks
+countdictstack dict_count sub {end} repeat
+b4_Inc_state restore
+} bd
+%%EndResource
+%FOPBeginFontDict
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Helvetica
+%%IncludeResource: font Courier-BoldOblique
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Helvetica-BoldOblique
+%%IncludeResource: font Helvetica-Bold
+%%IncludeResource: font Helvetica-Oblique
+%%IncludeResource: font Times-BoldItalic
+%%IncludeResource: font Courier
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Symbol
+%%IncludeResource: font ZapfDingbats
+%FOPEndFontDict
+%%BeginResource: encoding WinAnsiEncoding
+/WinAnsiEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma
+/hyphen /period /slash /zero /one
+/two /three /four /five /six
+/seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at
+/A /B /C /D /E
+/F /G /H /I /J
+/K /L /M /N /O
+/P /Q /R /S /T
+/U /V /W /X /Y
+/Z /bracketleft /backslash /bracketright /asciicircum
+/underscore /quoteleft /a /b /c
+/d /e /f /g /h
+/i /j /k /l /m
+/n /o /p /q /r
+/s /t /u /v /w
+/x /y /z /braceleft /bar
+/braceright /asciitilde /bullet /Euro /bullet
+/quotesinglbase /florin /quotedblbase /ellipsis /dagger
+/daggerdbl /circumflex /perthousand /Scaron /guilsinglleft
+/OE /bullet /Zcaron /bullet /bullet
+/quoteleft /quoteright /quotedblleft /quotedblright /bullet
+/endash /emdash /asciitilde /trademark /scaron
+/guilsinglright /oe /bullet /zcaron /Ydieresis
+/space /exclamdown /cent /sterling /currency
+/yen /brokenbar /section /dieresis /copyright
+/ordfeminine /guillemotleft /logicalnot /sfthyphen /registered
+/macron /degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /middot /cedilla
+/onesuperior /ordmasculine /guillemotright /onequarter /onehalf
+/threequarters /questiondown /Agrave /Aacute /Acircumflex
+/Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde
+/Ograve /Oacute /Ocircumflex /Otilde /Odieresis
+/multiply /Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls /agrave
+/aacute /acircumflex /atilde /adieresis /aring
+/ae /ccedilla /egrave /eacute /ecircumflex
+/edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex
+/otilde /odieresis /divide /oslash /ugrave
+/uacute /ucircumflex /udieresis /yacute /thorn
+/ydieresis
+] def
+%%EndResource
+%FOPBeginFontReencode
+/Courier-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Bold exch definefont pop
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica exch definefont pop
+/Courier-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-BoldOblique exch definefont pop
+/Courier-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Oblique exch definefont pop
+/Times-Roman findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Roman exch definefont pop
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-BoldOblique exch definefont pop
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Bold exch definefont pop
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Oblique exch definefont pop
+/Times-BoldItalic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-BoldItalic exch definefont pop
+/Courier findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier exch definefont pop
+/Times-Italic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Italic exch definefont pop
+/Times-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Bold exch definefont pop
+%FOPEndFontReencode
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 595 842
+%%BeginPageSetup
+<<
+/PageSize [595 842]
+/ImagingBBox null
+>> setpagedevice
+[1 0 0 -1 0 842] CT
+%%EndPageSetup
+GS
+[0.7509 0 0 0.74925 7.08661 601.05511] CT
+N
+0 0 M
+302 0 L
+302 227 L
+0 227 L
+0 0 L
+cp
+clip
+0.997 GC
+N
+0 0 302 227 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 604.80134] CT
+0.938 GC
+N
+0 0 238 92 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 604.80134] CT
+0.937 GC
+N
+0 0 238 92 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+0.699 GC
+N
+0 0 M
+1 0 L
+1 84 L
+0 85 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+0 -7 M
+6 -7 L
+6 85 L
+0 85 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+238 0 L
+237 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+0 -7 M
+6 -7 L
+6 85 L
+0 85 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+238 0 M
+237 1 L
+237 85 L
+238 85 L
+238 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+0 -7 M
+6 -7 L
+6 85 L
+0 85 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 84 M
+238 84 L
+238 85 L
+0 85 L
+1 84 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 84 L
+1 84 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+0 -7 M
+6 -7 L
+6 85 L
+0 85 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+237 1 L
+236 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+0 -7 M
+6 -7 L
+6 85 L
+0 85 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+236 2 M
+237 1 L
+237 84 L
+236 84 L
+236 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+0 -7 M
+6 -7 L
+6 85 L
+0 85 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+237 83 M
+237 84 L
+1 84 L
+2 83 L
+237 83 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+35 -7 M
+238 -7 L
+238 85 L
+35 85 L
+35 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 84 L
+0 85 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+35 -7 M
+238 -7 L
+238 85 L
+35 85 L
+35 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+238 0 L
+237 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+0.997 GC
+N
+238 0 M
+237 1 L
+237 85 L
+238 85 L
+238 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+35 -7 M
+238 -7 L
+238 85 L
+35 85 L
+35 -7 L
+cp
+clip
+0.997 GC
+N
+1 84 M
+238 84 L
+238 85 L
+0 85 L
+1 84 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+35 -7 M
+238 -7 L
+238 85 L
+35 85 L
+35 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 84 L
+1 84 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+35 -7 M
+238 -7 L
+238 85 L
+35 85 L
+35 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+237 1 L
+236 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+0.699 GC
+N
+236 2 M
+237 1 L
+237 84 L
+236 84 L
+236 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+35 -7 M
+238 -7 L
+238 85 L
+35 85 L
+35 -7 L
+cp
+clip
+0.699 GC
+N
+237 83 M
+237 84 L
+1 84 L
+2 83 L
+237 83 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 84 L
+0 85 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+238 0 L
+237 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+238 0 M
+237 1 L
+237 85 L
+238 85 L
+238 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 84 M
+238 84 L
+238 85 L
+0 85 L
+1 84 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 84 L
+1 84 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+237 1 L
+236 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+236 2 M
+237 1 L
+237 84 L
+236 84 L
+236 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 610.04605] CT
+N
+6 9 M
+35 9 L
+35 85 L
+6 85 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+237 83 M
+237 84 L
+1 84 L
+2 83 L
+237 83 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 604.80134] CT
+0.937 GC
+N
+6 -1 32 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 52.14058 604.80134] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -2 M
+239 -2 L
+239 94 L
+-1 94 L
+-1 -2 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 13 moveto 
+1 -1 scale
+(Input) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 53.64238 616.78926] CT
+0.937 GC
+N
+0 0 234 74 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 625.03097] CT
+N
+0 0 M
+0 5 L
+14 5 L
+14 0 L
+cp
+clip
+0.937 GC
+N
+0 0 14 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 625.03097] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 13 moveto 
+1 -1 scale
+(M) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 625.03097] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 29 moveto 
+1 -1 scale
+(a) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 625.03097] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 45 moveto 
+1 -1 scale
+(s) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 625.03097] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 61 moveto 
+1 -1 scale
+(k) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 624.28172] CT
+N
+0 0 M
+0 6 L
+41 6 L
+41 0 L
+cp
+clip
+0.997 GC
+N
+0 0 41 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 624.28172] CT
+0 GC
+/Helvetica 11 F
+GS
+N
+2 0 M
+39 0 L
+39 7 L
+2 7 L
+2 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+-161 7 moveto 
+1 -1 scale
+(F:\\MVPA\\MVPA\\MVPANI_V1.0_20190111\\BrainMask.nii) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 624.28172] CT
+N
+0 0 M
+0 6 L
+41 6 L
+41 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+41 0 L
+41 6 L
+0 6 L
+0 0 L
+cp
+1 1 M
+40 1 L
+40 5 L
+1 5 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 209.82948 624.28172] CT
+N
+0 0 M
+0 6 L
+11 6 L
+11 0 L
+cp
+clip
+0.937 GC
+N
+0 0 11 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 209.82948 624.28172] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 6 L
+11 6 L
+11 0 L
+cp
+clip
+GS
+0 0 translate
+11 6 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 11
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [11 0 0 6 0 0]
+  /Height 6
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*O"fe_l?`![`?-?*jA)4)&L\,d:f(!X#m10m!QF")/n0@WT0L4.!0)<qjN2$[!9EkJpVX,K%fisb
+YN,~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 209.82948 624.28172] CT
+0 GC
+/Helvetica 11 F
+GS
+N
+0 0 M
+11 0 L
+11 7 L
+0 7 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 7 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 618.28776] CT
+N
+0 0 M
+0 68 L
+137 68 L
+137 0 L
+cp
+clip
+0.938 GC
+N
+0 0 137 68 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 618.28776] CT
+N
+0 0 M
+0 68 L
+137 68 L
+137 0 L
+cp
+clip
+0.937 GC
+N
+0 0 137 68 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 60 L
+0 61 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+137 0 L
+136 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+137 0 M
+136 1 L
+136 61 L
+137 61 L
+137 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 60 M
+137 60 L
+137 61 L
+0 61 L
+1 60 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 60 L
+1 60 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+136 1 L
+135 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+135 2 M
+136 1 L
+136 60 L
+135 60 L
+135 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+0 -7 M
+6 -7 L
+6 61 L
+0 61 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+136 59 M
+136 60 L
+1 60 L
+2 59 L
+136 59 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 60 L
+0 61 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+137 0 L
+136 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.997 GC
+N
+137 0 M
+136 1 L
+136 61 L
+137 61 L
+137 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.997 GC
+N
+1 60 M
+137 60 L
+137 61 L
+0 61 L
+1 60 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 60 L
+1 60 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+136 1 L
+135 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+0.699 GC
+N
+135 2 M
+136 1 L
+136 60 L
+135 60 L
+135 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+34 -7 M
+137 -7 L
+137 61 L
+34 61 L
+34 -7 L
+cp
+clip
+0.699 GC
+N
+136 59 M
+136 60 L
+1 60 L
+2 59 L
+136 59 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 60 L
+0 61 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+137 0 L
+136 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+137 0 M
+136 1 L
+136 61 L
+137 61 L
+137 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 60 M
+137 60 L
+137 61 L
+0 61 L
+1 60 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 60 L
+1 60 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+136 1 L
+135 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+135 2 M
+136 1 L
+136 60 L
+135 60 L
+135 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 623.53248] CT
+N
+6 9 M
+34 9 L
+34 61 L
+6 61 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+136 59 M
+136 60 L
+1 60 L
+2 59 L
+136 59 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 618.28776] CT
+N
+-1 0 M
+137 0 L
+137 68 L
+-1 68 L
+-1 0 L
+cp
+clip
+0.937 GC
+N
+6 -1 31 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 57.39688 618.28776] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+137 0 L
+137 68 L
+-1 68 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 13 moveto 
+1 -1 scale
+(Data) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 58.89868 630.27569] CT
+N
+0 0 M
+0 50 L
+133 50 L
+133 0 L
+cp
+clip
+0.937 GC
+N
+0 0 133 50 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 94.19096 659.49626] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 7 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 94.19096 659.49626] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 7 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 7 0 0]
+  /Height 7
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gaub$YmJ3"$jG%DeT_:L3_pNsJgqS:U,JAY"LN`Clg3WG_VY0Fb\YS8f"0UF*!5==7>/jb3=)8j1\5Dm
+U;Sd@]19fe(?5rkoouK!;;,J!ioC&A4c2+q;Z~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 94.19096 659.49626] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+38 0 L
+38 7 L
+-1 7 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 9 moveto 
+1 -1 scale
+(Del...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 59.64958 659.49626] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 7 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 59.64958 659.49626] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 7 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 7 0 0]
+  /Height 7
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gaub$YmJ3"$jG%DeT_:L3_pNsJgqS:U,JAY"LN`Clg3WG_VY0Fb\YS8f"0UF*!5==7>/jb3=)8j1\5Dm
+U;Sd@]19fe(?5rkoouK!;;,J!ioC&A4c2+q;Z~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 59.64958 659.49626] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+39 0 L
+39 7 L
+-1 7 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+8 9 moveto 
+1 -1 scale
+(Add) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 59.64958 631.02493] CT
+N
+0 0 M
+0 37 L
+129 37 L
+129 0 L
+cp
+clip
+0.938 GC
+N
+0 0 129 37 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 59.64958 631.02493] CT
+N
+0 0 M
+0 37 L
+129 37 L
+129 0 L
+cp
+clip
+0.527 GC
+N
+0 0 M
+129 0 L
+129 37 L
+0 37 L
+0 0 L
+cp
+1 1 M
+128 1 L
+128 36 L
+1 36 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 60.40048 645.2606] CT
+N
+0 0 M
+0 17 L
+110 17 L
+110 0 L
+cp
+clip
+0.783 GC
+N
+0 0 110 17 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 73.16577 645.2606] CT
+[1 0 0 1 0 0] CT
+N
+-17 0 M
+-17 17 L
+93 17 L
+93 0 L
+cp
+clip
+GS
+0 0 translate
+76 17 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 76
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [76 0 0 17 0 0]
+  /Height 17
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[$K6lH!'u<fuJlbnSDb%Vl(kLU.'u:,)JsTF>!7:P@'`~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 73.16577 645.2606] CT
+[1 0 0 1 0 0] CT
+N
+-17 0 M
+-17 17 L
+93 17 L
+93 0 L
+cp
+clip
+GS
+0 0 translate
+10 17 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 10
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [10 0 0 17 0 0]
+  /Height 17
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gapq:_$YcZ'Euk`heR/n.TcS"'Eq&rLfoRd&7ec(_lGSR$^]+:lE&8jrp1ZWFY(<"#;^Y>(T-Z/enrT@
+Pi)bA)Gr5fA+?fk-!iImObok6h6/$F5t*>b)(7_+0EoFhf\Sm*NO96K==)AUd%.l';XrW\"lG:!~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 60.40048 645.2606] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 17 L
+17 17 L
+17 0 L
+cp
+clip
+GS
+0 0 translate
+17 17 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 17
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [17 0 0 17 0 0]
+  /Height 17
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[$!tF$Q!I+"hI=r*%UO["'T"P8X="dppqtTS*!k\U*6U)b&]_eX0N\'\fUR^LPA:[OfVNpID<CHRt
+7l-oW5DfG;br/N%%!Ni0)\hf<p$6fEnGXF0]Kui'b_Z=_~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 130.23413 645.2606] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 17 L
+17 17 L
+17 0 L
+cp
+clip
+GS
+0 0 translate
+17 17 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 17
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [17 0 0 17 0 0]
+  /Height 17
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[$!t@?qJO`8h.0r$<JJYNHIe`QseS>G8oB+<PG99"srpo>+#e^',jjUj9+$LkO^)27nKIWW5qW/Bj
+5^_hJcc?/+Pq1I672E+1H3RA<g3tk7HI-KEE!HY6"l@,tL^t3pL]ARsQWG"(!0K>H;Z~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 142.99943 631.77418] CT
+0.783 GC
+N
+0 0 17 18 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 142.99943 631.77418] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 9 L
+17 9 L
+17 0 L
+cp
+clip
+GS
+0 0 translate
+17 9 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 17
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [17 0 0 9 0 0]
+  /Height 9
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[$q"`\=5k*b2#9`g:l.$=8"[7G7N$@cUX"HpG0(A,+S7sfV"=EX&X.j6<:YXLI0S-F$j`B$jhnSP/
+:]LJ)i.gh~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 142.99943 638.51739] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 9 L
+17 9 L
+17 0 L
+cp
+clip
+GS
+0 0 translate
+17 9 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 17
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [17 0 0 9 0 0]
+  /Height 9
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[$q"`\=5k*b2#9`g:l.$;""[7?gJBqVSfC(qQ1Jh*%YY"0Vp?=A0i8)FL?b_B9="`>/rTe*X^o,MN
+5C`Q:](4(+DdU5+!=HI@JTma;I!Q$0!<@6/LCs~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 60.40048 631.77418] CT
+N
+0 0 M
+0 18 L
+110 18 L
+110 0 L
+cp
+clip
+0.938 GC
+N
+0 0 110 18 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 60.40048 179.97908] CT
+N
+0 603 M
+0 621 L
+110 621 L
+110 603 L
+cp
+clip
+0.997 GC
+N
+0 0 779 640 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 60.40048 623.53248] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 9 M
+110 9 L
+110 16 L
+-1 16 L
+-1 9 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 13 moveto 
+1 -1 scale
+(\(zfALFFMap_zy_nc022.nii\) ID:38/40\(Path:F:\\MVPA\\MVPA\\MVPA_paper\\exam\\fALFF_FunImgARglobalCW\\zfALFFMap_zy_nc022.nii\) ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 60.40048 635.5204] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+110 -1 L
+110 14 L
+-1 14 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 13 moveto 
+1 -1 scale
+(\(zfALFFMap_zy_nc023.nii\) ID:39/40\(Path:F:\\MVPA\\MVPA\\MVPA_paper\\exam\\fALFF_FunImgARglobalCW\\zfALFFMap_zy_nc023.nii\) ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 128.73233 659.49626] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 7 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 128.73233 659.49626] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 7 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 7 0 0]
+  /Height 7
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gaub$YmJ3"$jG%DeT_:L3_pNsJgqS:U,JAY"LN`Clg3WG_VY0Fb\YS8f"0UF*!5==7>/jb3=)8j1\5Dm
+U;Sd@]19fe(?5rkoouK!;;,J!ioC&A4c2+q;Z~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 128.73233 659.49626] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+38 0 L
+38 7 L
+-1 7 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 9 moveto 
+1 -1 scale
+(Del...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 635.5204] CT
+N
+0 0 M
+0 5 L
+14 5 L
+14 0 L
+cp
+clip
+0.937 GC
+N
+0 0 14 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 635.5204] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 13 moveto 
+1 -1 scale
+(L) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 635.5204] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 29 moveto 
+1 -1 scale
+(a) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 635.5204] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 45 moveto 
+1 -1 scale
+(b) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 635.5204] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+14 -1 L
+14 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 61 moveto 
+1 -1 scale
+(el) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 634.77116] CT
+N
+0 0 M
+0 6 L
+41 6 L
+41 0 L
+cp
+clip
+0.997 GC
+N
+0 0 41 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 634.77116] CT
+0 GC
+/Helvetica 11 F
+GS
+N
+2 0 M
+39 0 L
+39 7 L
+2 7 L
+2 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 7 moveto 
+1 -1 scale
+(F:\\MVPA\\MVPA\\MVPA_paper\\exam\\label.xlsx) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 634.77116] CT
+N
+0 0 M
+0 6 L
+41 6 L
+41 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+41 0 L
+41 6 L
+0 6 L
+0 0 L
+cp
+1 1 M
+40 1 L
+40 5 L
+1 5 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 209.82948 634.77116] CT
+N
+0 0 M
+0 6 L
+11 6 L
+11 0 L
+cp
+clip
+0.937 GC
+N
+0 0 11 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 209.82948 634.77116] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 6 L
+11 6 L
+11 0 L
+cp
+clip
+GS
+0 0 translate
+11 6 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 11
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [11 0 0 6 0 0]
+  /Height 6
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*O"fe_l?`![`?-?*jA)4)&L\,d:f(!X#m10m!QF")/n0@WT0L4.!0)<qjN2$[!9EkJpVX,K%fisb
+YN,~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 209.82948 634.77116] CT
+0 GC
+/Helvetica 11 F
+GS
+N
+0 0 M
+11 0 L
+11 7 L
+0 7 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 7 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 647.50833] CT
+N
+0 0 M
+0 5 L
+14 5 L
+14 0 L
+cp
+clip
+0.937 GC
+N
+0 0 14 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 647.50833] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+14 0 L
+14 6 L
+-1 6 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 13 moveto 
+1 -1 scale
+(F) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 647.50833] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+14 0 L
+14 6 L
+-1 6 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 29 moveto 
+1 -1 scale
+(o) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 163.27371 647.50833] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+14 0 L
+14 6 L
+-1 6 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 45 moveto 
+1 -1 scale
+(ld) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+N
+0 0 M
+0 22 L
+57 22 L
+57 0 L
+cp
+clip
+0.938 GC
+N
+0 0 57 22 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+N
+0 0 M
+0 22 L
+57 22 L
+57 0 L
+cp
+clip
+0.937 GC
+N
+0 0 57 22 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+N
+0 0 M
+0 22 L
+57 22 L
+57 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 21 L
+0 22 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+N
+0 0 M
+0 22 L
+57 22 L
+57 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+57 0 L
+56 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+N
+0 0 M
+0 22 L
+57 22 L
+57 0 L
+cp
+clip
+0.997 GC
+N
+57 0 M
+56 1 L
+56 22 L
+57 22 L
+57 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+N
+0 0 M
+0 22 L
+57 22 L
+57 0 L
+cp
+clip
+0.997 GC
+N
+1 21 M
+57 21 L
+57 22 L
+0 22 L
+1 21 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 21 L
+1 21 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+0.997 GC
+N
+1 1 M
+56 1 L
+55 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+0.699 GC
+N
+55 2 M
+56 1 L
+56 21 L
+55 21 L
+55 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 177.5408 646.00984] CT
+0.699 GC
+N
+56 20 M
+56 21 L
+1 21 L
+2 20 L
+56 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 179.0426 647.50833] CT
+N
+0 0 M
+0 18 L
+53 18 L
+53 0 L
+cp
+clip
+0.937 GC
+N
+0 0 53 18 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 206.82588 655.00079] CT
+N
+0 0 M
+0 5 L
+11 5 L
+11 0 L
+cp
+clip
+0.938 GC
+N
+0 0 11 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 206.82588 655.00079] CT
+N
+0 0 M
+0 5 L
+11 5 L
+11 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+11 0 L
+11 5 L
+0 5 L
+0 0 L
+cp
+1 1 M
+10 1 L
+10 4 L
+1 4 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 182.0462 654.25154] CT
+N
+0 0 M
+0 6 L
+31 6 L
+31 0 L
+cp
+clip
+0.937 GC
+N
+0 0 31 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 182.0462 654.25154] CT
+N
+0 0 M
+0 6 L
+31 6 L
+31 0 L
+cp
+clip
+0.937 GC
+N
+0 0 31 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 182.7971 652.00381] CT
+[1 0 0 1 0 0] CT
+N
+-1 3 M
+-1 9 L
+30 9 L
+30 3 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gat%]bGp.j'SbLpFPup"%ME,61D&&mM3e@)`!]ZV/58iU'ZBf$&>s.M2XBq9J$6QZkOT42^Y_<gaKk_*
+)\+%52)>Yn.#OIjV.i!7L-nKEJ'fFH/F2hNm.^DECl[P_D+g&?<tfQln+XGg.#)0?Y3UA)D;4h[dng)G
+P9_U#1@h;VqS"&+iTYG6MB[qP30#EgJ2&_[W2b/'*0/'LT'+_koldrI<CI9AJ-FDE4\:gB/-3>blhd7e
+.8E/?^c%Yk$8`t"AYs0f]j<f%5tV,b%(t?^R$PS6k;,/,cf_X;CMogKY[.UNj`4c`?B*GoNpDBMl_T`G
+:9uYiiHi2\OqHl<IV*'rK^6t\!sJn7*<~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 182.0462 654.25154] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+31 -1 L
+31 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 8 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 182.0462 648.25758] CT
+N
+0 0 M
+0 7 L
+30 7 L
+30 0 L
+cp
+clip
+0.937 GC
+N
+0 0 30 7 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 182.0462 648.25758] CT
+N
+0 0 M
+0 7 L
+30 7 L
+30 0 L
+cp
+clip
+0.937 GC
+N
+0 0 30 7 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 182.7971 646.75909] CT
+[1 0 0 1 0 0] CT
+N
+-1 2 M
+-1 9 L
+29 9 L
+29 2 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gat$r/['b6)#ZnGjqpEmZ^CLs<+[<l/0pFqh7JS2)pH)f0Gk'LR0+@;'H/'EkQDpYgtY'QDN&m;HHpTW
+qn17%hTt@,Ge`-U*1Ni$dfBV#RR9m"1rnY([d>nGRgpi3d6ug:!VLlUW[cVC^H5](f=J-4K_.2:_f>0h
+]BsdRfke\"4NDFM_sI-pqu%!2#2"$'ca)nX\ZdWCQ--Bh%"k9&R\mtVKEMBn=;VE^2OjMimWm[RFBYm"
+U*u$kUVl$j$&7<Fh/:VI/sh_HX]DLA@KEJWb2`#RAJmC#e+,U3JcN9A,RK)G#a<@5'^p_Y")LgK3KA`/
+<E5SbVZ];Ea(#gLA`4Cq0FS&/5+bE0@(5b'>SKW][_kB,G]=;(]K4u%TYl$OO>.`+I!%[[TYo+P"Th):
+U&~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 182.0462 648.25758] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+30 -1 L
+30 8 L
+0 8 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 9 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 206.82588 649.00683] CT
+N
+0 0 M
+0 5 L
+11 5 L
+11 0 L
+cp
+clip
+0.997 GC
+N
+0 0 11 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 206.82588 649.00683] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 0 M
+10 0 L
+10 5 L
+1 5 L
+1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 7 moveto 
+1 -1 scale
+(F:\\MVPA\\MVPA\\MVPA_paper\\exam\\fold.xlsx) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 206.82588 649.00683] CT
+N
+0 0 M
+0 5 L
+11 5 L
+11 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+11 0 L
+11 5 L
+0 5 L
+0 0 L
+cp
+1 1 M
+10 1 L
+10 4 L
+1 4 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 673.73193] CT
+N
+0 0 M
+0 36 L
+293 36 L
+293 0 L
+cp
+clip
+0.938 GC
+N
+0 0 293 36 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 673.73193] CT
+N
+0 0 M
+0 36 L
+293 36 L
+293 0 L
+cp
+clip
+0.937 GC
+N
+0 0 293 36 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 28 L
+0 29 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 29 L
+293 29 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 28 M
+293 28 L
+293 29 L
+0 29 L
+1 28 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 28 L
+1 28 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 28 L
+291 28 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+292 27 M
+292 28 L
+1 28 L
+2 27 L
+292 27 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+104 -7 M
+293 -7 L
+293 29 L
+104 29 L
+104 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 28 L
+0 29 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+104 -7 M
+293 -7 L
+293 29 L
+104 29 L
+104 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+0.997 GC
+N
+293 0 M
+292 1 L
+292 29 L
+293 29 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+104 -7 M
+293 -7 L
+293 29 L
+104 29 L
+104 -7 L
+cp
+clip
+0.997 GC
+N
+1 28 M
+293 28 L
+293 29 L
+0 29 L
+1 28 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+104 -7 M
+293 -7 L
+293 29 L
+104 29 L
+104 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 28 L
+1 28 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+104 -7 M
+293 -7 L
+293 29 L
+104 29 L
+104 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+0.699 GC
+N
+291 2 M
+292 1 L
+292 28 L
+291 28 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+104 -7 M
+293 -7 L
+293 29 L
+104 29 L
+104 -7 L
+cp
+clip
+0.699 GC
+N
+292 27 M
+292 28 L
+1 28 L
+2 27 L
+292 27 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 28 L
+0 29 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 29 L
+293 29 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 28 M
+293 28 L
+293 29 L
+0 29 L
+1 28 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 28 L
+1 28 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 28 L
+291 28 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 678.97665] CT
+N
+6 9 M
+104 9 L
+104 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+292 27 M
+292 28 L
+1 28 L
+2 27 L
+292 27 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 673.73193] CT
+N
+0 0 M
+294 0 L
+294 37 L
+0 37 L
+0 0 L
+cp
+clip
+0.937 GC
+N
+6 -1 101 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 673.73193] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+294 0 L
+294 37 L
+0 37 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 13 moveto 
+1 -1 scale
+(Machine Learning) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 12.34291 685.71986] CT
+N
+0 0 M
+0 18 L
+289 18 L
+289 0 L
+cp
+clip
+0.937 GC
+N
+0 0 289 18 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 158.01742 687.21835] CT
+N
+0 0 M
+0 6 L
+32 6 L
+32 0 L
+cp
+clip
+0.937 GC
+N
+0 0 32 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 158.01742 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+33 -1 L
+33 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 13 moveto 
+1 -1 scale
+(Feat) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 158.01742 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+34 -1 L
+34 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 29 moveto 
+1 -1 scale
+(ure) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 158.01742 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+34 -1 L
+34 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 45 moveto 
+1 -1 scale
+(Sele) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 158.01742 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+34 -1 L
+34 6 L
+-1 6 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 61 moveto 
+1 -1 scale
+(ction) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 201.56959 687.9676] CT
+N
+0 0 M
+0 4 L
+23 4 L
+23 0 L
+cp
+clip
+0.938 GC
+N
+0 0 23 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 201.56959 687.9676] CT
+N
+0 0 M
+0 4 L
+23 4 L
+23 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+23 0 L
+23 4 L
+0 4 L
+0 0 L
+cp
+1 1 M
+22 1 L
+22 3 L
+1 3 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 54.39328 687.21835] CT
+N
+0 0 M
+0 5 L
+36 5 L
+36 0 L
+cp
+clip
+0.937 GC
+N
+0 0 36 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 54.39328 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+37 -1 L
+37 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 13 moveto 
+1 -1 scale
+(Featu) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 54.39328 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+37 -1 L
+37 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+12 29 moveto 
+1 -1 scale
+(re) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 54.39328 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+37 -1 L
+37 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 45 moveto 
+1 -1 scale
+(Trans) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 54.39328 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+37 -1 L
+37 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 61 moveto 
+1 -1 scale
+(forma) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 54.39328 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+37 -1 L
+37 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 77 moveto 
+1 -1 scale
+(tion) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 111.46165 687.21835] CT
+N
+0 0 M
+0 5 L
+32 5 L
+32 0 L
+cp
+clip
+0.937 GC
+N
+0 0 32 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 111.46165 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+33 -1 L
+33 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 13 moveto 
+1 -1 scale
+(Feat) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 111.46165 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+33 -1 L
+33 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 29 moveto 
+1 -1 scale
+(ure) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 111.46165 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+33 -1 L
+33 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 45 moveto 
+1 -1 scale
+(Redu) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 111.46165 687.21835] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+33 -1 L
+33 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 61 moveto 
+1 -1 scale
+(ction) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 687.9676] CT
+N
+0 0 M
+0 14 L
+30 14 L
+30 0 L
+cp
+clip
+0.997 GC
+N
+0 0 30 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 687.9676] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 14 L
+30 14 L
+30 0 L
+cp
+clip
+GS
+0 0 translate
+30 26 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 30
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [30 0 0 26 0 0]
+  /Height 26
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+GauIu9aZM,'LpJ%G9SY*a@(Uf.kRT^8giU`CeK8P%SR2B&-soH,Bj/9+b@:Z&=TIFbAns;$8@-@N3UqD
+_se<C"UJ<H`AinD\pd(6!Q)-l(/hCl^j%Wkqi<SL,ep2;O^HP"b\]P?!G7E8d^J^P>*>4`\OcnI+Lfe-
+nl8kVkBXd4"3_m[V'UDUVNWjP%.[8!P+?Y!Bn3FH_QN3L7eWRL!+?c&F^=`immKGB_XcfeW[\Ku8PjrA
+J&[_CbQ~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 80.67477 688.71684] CT
+N
+1 0 M
+1 13 L
+15 13 L
+15 0 L
+cp
+clip
+0.997 GC
+N
+0 0 15 24 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 80.67477 688.71684] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 0 M
+15 0 L
+15 13 L
+1 13 L
+1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 17 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 687.9676] CT
+N
+0 0 M
+0 14 L
+30 14 L
+30 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+30 0 L
+30 26 L
+0 26 L
+0 0 L
+cp
+1 1 M
+29 1 L
+29 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 91.93826 688.71684] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 13 L
+15 13 L
+15 0 L
+cp
+clip
+GS
+0 0 translate
+15 24 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 15
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [15 0 0 24 0 0]
+  /Height 24
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*D\S.,^jlk*YF^"1M0BJm.S%=*!s"#K!%e~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 17.59921 687.9676] CT
+N
+0 0 M
+0 14 L
+38 14 L
+38 0 L
+cp
+clip
+0.997 GC
+N
+0 0 38 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 17.59921 687.9676] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 14 L
+38 14 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 26 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 26 0 0]
+  /Height 26
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gaub(9aZJ;*/<u6[h4ZD\.S7=;+*h#7U1`aI>kba(j\Fa]YOQ<k5mk\)!(AH=&kN_l-;6o+Ra`Mk@Ie>
+?2$,b!XLDMP.pDJH2\]e!<gGgq#G2J%;<H6AQ_3[J:dQ^'N]ZR$6l\;.1%DsplMitmui8^:")fL:dhRS
+Zk]d-JiJeN71rEbnLQ,F__@T+!C[]`P(Mnf4%KF)A*PmF_f'^:*!?fmF06pK[V_RT&3t2.eh#"q;.gdM
+&DS@*19n+~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 16.84831 688.71684] CT
+N
+1 0 M
+1 13 L
+23 13 L
+23 0 L
+cp
+clip
+0.997 GC
+N
+0 0 23 24 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 16.84831 688.71684] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+23 0 L
+23 13 L
+0 13 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 17 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 17.59921 687.9676] CT
+N
+0 0 M
+0 14 L
+38 14 L
+38 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+38 0 L
+38 26 L
+0 26 L
+0 0 L
+cp
+1 1 M
+37 1 L
+37 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 34.119 688.71684] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 13 L
+15 13 L
+15 0 L
+cp
+clip
+GS
+0 0 translate
+15 24 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 15
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [15 0 0 24 0 0]
+  /Height 24
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*D\S.,^jlk*YF^"1M0BJm.S%=*!s"#K!%e~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 179.0426 687.9676] CT
+N
+0 0 M
+0 14 L
+26 14 L
+26 0 L
+cp
+clip
+0.997 GC
+N
+0 0 26 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 179.0426 687.9676] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 14 L
+26 14 L
+26 0 L
+cp
+clip
+GS
+0 0 translate
+26 26 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 26
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [26 0 0 26 0 0]
+  /Height 26
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1lbmK%f(kppQDBiJ>i'q60/;f63g5(['MLK0WKuVII_Vi#C]_h;nLjUpH@n^$k)^4>d0ugf-gU=N@
+IYF/A5SZ^B%)Xnr+!Kbh:cp,867ma>D`uG<>7Mom0=cJa;_Dd3ObXoI-LEFpeo#M")oqIu#EhZjaK;kV
+>gbqE-TR8^g/0J:hYVpF81&1,QSdm\:(@Dae'N4X^[5'X3=$=3X(e$:n!t#2&1C:g<E764qE*g^:d5TG
+P$%~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 178.2917 688.71684] CT
+N
+1 0 M
+1 13 L
+11 13 L
+11 0 L
+cp
+clip
+0.997 GC
+N
+0 0 11 24 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 178.2917 688.71684] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 0 M
+11 0 L
+11 13 L
+1 13 L
+1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 17 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 179.0426 687.9676] CT
+N
+0 0 M
+0 14 L
+26 14 L
+26 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+26 0 L
+26 26 L
+0 26 L
+0 0 L
+cp
+1 1 M
+25 1 L
+25 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 186.5516 688.71684] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 13 L
+15 13 L
+15 0 L
+cp
+clip
+GS
+0 0 translate
+15 24 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 15
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [15 0 0 24 0 0]
+  /Height 24
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*D\S.,^jlk*YF^"1M0BJm.S%=*!s"#K!%e~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 133.98863 687.9676] CT
+N
+0 0 M
+0 14 L
+26 14 L
+26 0 L
+cp
+clip
+0.997 GC
+N
+0 0 26 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 133.98863 687.9676] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 14 L
+26 14 L
+26 0 L
+cp
+clip
+GS
+0 0 translate
+26 26 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 26
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [26 0 0 26 0 0]
+  /Height 26
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1lbmK%f(kppQDBiJ>i'q60/;f63g5(['MLK0WKuVII_Vi#C]_h;nLjUpH@n^$k)^4>d0ugf-gU=N@
+IYF/A5SZ^B%)Xnr+!Kbh:cp,867ma>D`uG<>7Mom0=cJa;_Dd3ObXoI-LEFpeo#M")oqIu#EhZjaK;kV
+>gbqE-TR8^g/0J:hYVpF81&1,QSdm\:(@Dae'N4X^[5'X3=$=3X(e$:n!t#2&1C:g<E764qE*g^:d5TG
+P$%~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 133.23773 688.71684] CT
+N
+1 0 M
+1 13 L
+11 13 L
+11 0 L
+cp
+clip
+0.997 GC
+N
+0 0 11 24 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 133.23773 688.71684] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 0 M
+11 0 L
+11 13 L
+1 13 L
+1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 17 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 133.98863 687.9676] CT
+N
+0 0 M
+0 14 L
+26 14 L
+26 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+26 0 L
+26 26 L
+0 26 L
+0 0 L
+cp
+1 1 M
+25 1 L
+25 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 141.49763 688.71684] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 13 L
+15 13 L
+15 0 L
+cp
+clip
+GS
+0 0 translate
+15 24 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 15
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [15 0 0 24 0 0]
+  /Height 24
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*D\S.,^jlk*YF^"1M0BJm.S%=*!s"#K!%e~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 17.59921 692.46307] CT
+N
+0 0 M
+0 5 L
+34 5 L
+34 0 L
+cp
+clip
+0.937 GC
+N
+0 0 34 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 17.59921 692.46307] CT
+N
+0 0 M
+0 5 L
+34 5 L
+34 0 L
+cp
+clip
+0.937 GC
+N
+0 0 34 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 690.21533] CT
+[1 0 0 1 0 0] CT
+N
+-1 3 M
+-1 8 L
+33 8 L
+33 3 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gar'bbmH^$'L:XO?[3G[8o,m`O[=^mrXC3CY$#fn7F(>U*C]c.D`:X`Alo])?(;Sk6'N.-k=J']7bVhl
+&:.Y?o>Xmi0^E0#3TgNRpQTYWTgcJU*?^"P&UmV9e%2XqIL"a_\mC)K~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 17.59921 692.46307] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+35 0 L
+35 5 L
+-1 5 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 8 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 66.40768 693.21232] CT
+N
+0 0 M
+0 4 L
+19 4 L
+19 0 L
+cp
+clip
+0.938 GC
+N
+0 0 19 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 66.40768 693.21232] CT
+N
+0 0 M
+0 4 L
+19 4 L
+19 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+19 0 L
+19 4 L
+0 4 L
+0 0 L
+cp
+1 1 M
+18 1 L
+18 3 L
+1 3 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 49.88789 693.21232] CT
+N
+0 0 M
+0 3 L
+22 3 L
+22 0 L
+cp
+clip
+0.937 GC
+N
+0 0 22 3 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 49.88789 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+23 0 L
+23 3 L
+-1 3 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 13 moveto 
+1 -1 scale
+(Sp) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 49.88789 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+23 0 L
+23 3 L
+-1 3 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 29 moveto 
+1 -1 scale
+(he) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 49.88789 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+23 0 L
+23 3 L
+-1 3 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 45 moveto 
+1 -1 scale
+(re=) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 693.21232] CT
+N
+0 0 M
+0 3 L
+16 3 L
+16 0 L
+cp
+clip
+0.937 GC
+N
+0 0 16 3 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+16 0 L
+16 3 L
+0 3 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 13 moveto 
+1 -1 scale
+(V) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+16 0 L
+16 3 L
+0 3 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 29 moveto 
+1 -1 scale
+(o) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+16 0 L
+16 3 L
+0 3 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 45 moveto 
+1 -1 scale
+(x) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+16 0 L
+16 3 L
+0 3 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 61 moveto 
+1 -1 scale
+(el) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 81.42567 693.21232] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+16 0 L
+16 3 L
+0 3 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 77 moveto 
+1 -1 scale
+(s) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 700.70477] CT
+N
+0 0 M
+0 36 L
+293 36 L
+293 0 L
+cp
+clip
+0.938 GC
+N
+0 0 293 36 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 700.70477] CT
+N
+0 0 M
+0 36 L
+293 36 L
+293 0 L
+cp
+clip
+0.937 GC
+N
+0 0 293 36 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 28 L
+0 29 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 29 L
+293 29 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 28 M
+293 28 L
+293 29 L
+0 29 L
+1 28 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 28 L
+1 28 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 28 L
+291 28 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+0 -7 M
+6 -7 L
+6 29 L
+0 29 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+292 27 M
+292 28 L
+1 28 L
+2 27 L
+292 27 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 28 L
+0 29 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 29 L
+293 29 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.997 GC
+N
+1 28 M
+293 28 L
+293 29 L
+0 29 L
+1 28 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 28 L
+1 28 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+0.699 GC
+N
+291 2 M
+292 1 L
+292 28 L
+291 28 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+45 -7 M
+293 -7 L
+293 29 L
+45 29 L
+45 -7 L
+cp
+clip
+0.699 GC
+N
+292 27 M
+292 28 L
+1 28 L
+2 27 L
+292 27 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 28 L
+0 29 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 29 L
+293 29 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 28 M
+293 28 L
+293 29 L
+0 29 L
+1 28 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 28 L
+1 28 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 28 L
+291 28 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 705.94949] CT
+N
+6 9 M
+45 9 L
+45 29 L
+6 29 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+292 27 M
+292 28 L
+1 28 L
+2 27 L
+292 27 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 700.70477] CT
+N
+0 0 M
+294 0 L
+294 36 L
+0 36 L
+0 0 L
+cp
+clip
+0.937 GC
+N
+6 -1 42 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 700.70477] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+294 0 L
+294 37 L
+0 37 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 13 moveto 
+1 -1 scale
+(Output) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 12.34291 711.94346] CT
+N
+0 0 M
+0 19 L
+289 19 L
+289 0 L
+cp
+clip
+0.937 GC
+N
+0 0 289 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 61.15138 712.6927] CT
+0.937 GC
+N
+0 0 59 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 61.15138 712.6927] CT
+0.937 GC
+N
+0 0 59 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 61.90228 709.69572] CT
+[1 0 0 1 0 0] CT
+N
+-1 4 M
+-1 8 L
+58 8 L
+58 4 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gar'bbmH^$'L:XO?[3G[8o,m`O[=^mrXC3CY$#fn7F(>U*C]c.D`:X`Alo])?(;Sk6'N.-k=J']7bVhl
+&:.Y?o>Xmi0^E0#3TgNRpQTYWTgcJU*?^"P&UmV9e%2XqIL"a_\mC)K~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 61.15138 712.6927] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+60 -1 L
+60 5 L
+-1 5 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 7 moveto 
+1 -1 scale
+(Wei...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 61.15138 718.68667] CT
+0.937 GC
+N
+0 0 38 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 61.15138 718.68667] CT
+0.937 GC
+N
+0 0 38 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 61.90228 715.68968] CT
+[1 0 0 1 0 0] CT
+N
+-1 4 M
+-1 8 L
+37 8 L
+37 4 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gar'bbmH^$'L:XO?[3G[8o,m`O[=^mrXC3CY$#fn7F(>U*C]c.D`:X`Alo])?(;Sk6'N.-k=J']7bVhl
+&:.Y?o>Xmi0^E0#3TgNRpQTYWTgcJU*?^"P&UmV9e%2XqIL"a_\mC)K~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 61.15138 718.68667] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+39 -1 L
+39 5 L
+-1 5 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 7 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 19.85191 712.6927] CT
+N
+0 0 M
+0 5 L
+8 5 L
+8 0 L
+cp
+clip
+0.937 GC
+N
+0 0 8 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 19.85191 712.6927] CT
+N
+0 0 M
+0 5 L
+8 5 L
+8 0 L
+cp
+clip
+0.937 GC
+N
+0 0 8 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 20.60281 710.44496] CT
+[1 0 0 1 0 0] CT
+N
+-1 3 M
+-1 8 L
+7 8 L
+7 3 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"*g7g<<Ci5a/^?\"Y@+E1q<g\n;ucFJ#ZcG.P[gA_W!\aX9&<;CU>Z5X<mHnL@<Hj@SMEIQ`UK5kHe
+Y(AVDl=6tr,jbPS(W8?60K(PWpudu6?tF7g`[C3Pq<]&UF8FI_R<(U-IJr^EfEGW3rqHh@"cCM"!R)p<
+E<~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 19.85191 717.93742] CT
+N
+0 0 M
+0 5 L
+32 5 L
+32 0 L
+cp
+clip
+0.937 GC
+N
+0 0 32 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 19.85191 717.93742] CT
+N
+0 0 M
+0 5 L
+32 5 L
+32 0 L
+cp
+clip
+0.937 GC
+N
+0 0 32 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 20.60281 715.68968] CT
+[1 0 0 1 0 0] CT
+N
+-1 3 M
+-1 8 L
+31 8 L
+31 3 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceGray setcolorspace
+<<
+  /Decode [0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"*g7g<<Ci5a/^?\"Y@+E1q<g\n;ucFJ#ZcG.P[gA_W!\aX9&<;CU>Z5X<mHnL@<Hj@SMEIQ`UK5kHe
+Y(AVDl=6tr,jbPS(W8?60K(PWpudu6?tF7g`[C3Pq<]&UF8FI_R<(U-IJr^EfEGW3rqHh@"cCM"!R)p<
+E<~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 19.85191 717.93742] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+33 0 L
+33 6 L
+0 6 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 8 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 103.20175 715.68968] CT
+N
+0 0 M
+0 3 L
+31 3 L
+31 0 L
+cp
+clip
+0.937 GC
+N
+0 0 31 3 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 103.20175 715.68968] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+32 0 L
+32 4 L
+0 4 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 13 moveto 
+1 -1 scale
+(Outp) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 103.20175 715.68968] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+32 0 L
+32 4 L
+0 4 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+8 29 moveto 
+1 -1 scale
+(ut ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 103.20175 715.68968] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+32 0 L
+32 4 L
+0 4 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 45 moveto 
+1 -1 scale
+(Path) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 127.23054 715.68968] CT
+N
+0 0 M
+0 4 L
+59 4 L
+59 0 L
+cp
+clip
+0.997 GC
+N
+0 0 59 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 127.23054 715.68968] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 0 M
+58 0 L
+58 4 L
+1 4 L
+1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 7 moveto 
+1 -1 scale
+(F:\\MVPA\\MVPA) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 127.23054 715.68968] CT
+N
+0 0 M
+0 4 L
+59 4 L
+59 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+59 0 L
+59 4 L
+0 4 L
+0 0 L
+cp
+1 1 M
+58 1 L
+58 3 L
+1 3 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 173.03541 715.68968] CT
+N
+0 0 M
+0 4 L
+11 4 L
+11 0 L
+cp
+clip
+0.937 GC
+N
+0 0 11 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 173.03541 715.68968] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 4 L
+11 4 L
+11 0 L
+cp
+clip
+GS
+0 0 translate
+11 4 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 11
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [11 0 0 4 0 0]
+  /Height 4
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*%g:%ub6sC3O?7aYjF8j[>$Cdgf<7t@!6BT]l4m,8Y2IQo2s6;'OSe7h,Idf2)It@Kh"LGbL_Kis
+-t6N~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 173.03541 715.68968] CT
+0 GC
+/Helvetica 11 F
+GS
+N
+-1 0 M
+12 0 L
+12 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 6 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+N
+0 0 M
+0 9 L
+45 9 L
+45 0 L
+cp
+clip
+0.937 GC
+N
+0 0 45 9 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 13 moveto 
+1 -1 scale
+(Acc/Sp) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 29 moveto 
+1 -1 scale
+(ecificit) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+17 45 moveto 
+1 -1 scale
+(y/) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 61 moveto 
+1 -1 scale
+(Sentivit) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+10 77 moveto 
+1 -1 scale
+(y of ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+5 93 moveto 
+1 -1 scale
+(Each ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 24.3573 711.94346] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+46 0 L
+46 9 L
+0 9 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+10 109 moveto 
+1 -1 scale
+(Fold) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 199.31689 714.19119] CT
+N
+0 0 M
+0 6 L
+25 6 L
+25 0 L
+cp
+clip
+0.937 GC
+N
+0 0 25 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 199.31689 714.19119] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 6 L
+25 6 L
+25 0 L
+cp
+clip
+GS
+0 0 translate
+25 6 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 25
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [25 0 0 6 0 0]
+  /Height 6
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+GatmsYmEZM#R+:Q%NBDp^Oq5_Cd0'J!W.OT.GXH`o-LF%m[<mCK7us,VaQ3u\-83cVlK$o"h.FS1UDn9
+F0KW\_,i1(.%HS~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 199.31689 714.19119] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 6 L
+25 6 L
+25 0 L
+cp
+clip
+GS
+0 0 translate
+25 6 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 25
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [25 0 0 6 0 0]
+  /Height 6
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+GatmtYmJ2g!!Gg!'.[9gE<NOC;^_Ye^l]<C1P+U1?nK3qs/u,W:I5?GS1CGKpG'[p#F="t&E';PV'r0#
+k?;ZiI>m^_JRrW!PQDYTQ',&%It>4063tSuf%Lu$S@eL1dTR"d/db*%T.bR8A@V~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 199.31689 714.19119] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+25 -1 L
+25 6 L
+0 6 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 8 moveto 
+1 -1 scale
+(Run) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 727.67761] CT
+N
+0 0 M
+0 28 L
+293 28 L
+293 0 L
+cp
+clip
+0.938 GC
+N
+0 0 293 28 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 727.67761] CT
+N
+0 0 M
+0 28 L
+293 28 L
+293 0 L
+cp
+clip
+0.937 GC
+N
+0 0 293 28 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 20 L
+0 21 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 21 L
+293 21 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 20 M
+293 20 L
+293 21 L
+0 21 L
+1 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 20 L
+1 20 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 20 L
+291 20 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+292 19 M
+292 20 L
+1 20 L
+2 19 L
+292 19 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+57 -7 M
+293 -7 L
+293 21 L
+57 21 L
+57 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 20 L
+0 21 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+57 -7 M
+293 -7 L
+293 21 L
+57 21 L
+57 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+0.997 GC
+N
+293 0 M
+292 1 L
+292 21 L
+293 21 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+57 -7 M
+293 -7 L
+293 21 L
+57 21 L
+57 -7 L
+cp
+clip
+0.997 GC
+N
+1 20 M
+293 20 L
+293 21 L
+0 21 L
+1 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+57 -7 M
+293 -7 L
+293 21 L
+57 21 L
+57 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 20 L
+1 20 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+57 -7 M
+293 -7 L
+293 21 L
+57 21 L
+57 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+0.699 GC
+N
+291 2 M
+292 1 L
+292 20 L
+291 20 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+57 -7 M
+293 -7 L
+293 21 L
+57 21 L
+57 -7 L
+cp
+clip
+0.699 GC
+N
+292 19 M
+292 20 L
+1 20 L
+2 19 L
+292 19 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 20 L
+0 21 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 21 L
+293 21 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 20 M
+293 20 L
+293 21 L
+0 21 L
+1 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 20 L
+1 20 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 20 L
+291 20 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 732.92233] CT
+N
+6 9 M
+57 9 L
+57 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+292 19 M
+292 20 L
+1 20 L
+2 19 L
+292 19 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 727.67761] CT
+0.937 GC
+N
+6 -1 54 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 727.67761] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+294 -1 L
+294 30 L
+0 30 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 13 moveto 
+1 -1 scale
+(Statistics) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 12.34291 738.9163] CT
+N
+0 0 M
+0 11 L
+289 11 L
+289 0 L
+cp
+clip
+0.937 GC
+N
+0 0 289 11 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 76.16937 740.41479] CT
+N
+0 0 M
+0 3 L
+30 3 L
+30 0 L
+cp
+clip
+0.997 GC
+N
+0 0 30 3 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 76.16937 740.41479] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 0 M
+29 0 L
+29 4 L
+1 4 L
+1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 6 moveto 
+1 -1 scale
+(1000) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 76.16937 740.41479] CT
+N
+0 0 M
+0 3 L
+30 3 L
+30 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+30 0 L
+30 3 L
+0 3 L
+0 0 L
+cp
+1 1 M
+29 1 L
+29 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 69.41127 740.41479] CT
+N
+0 0 M
+0 2 L
+9 2 L
+9 0 L
+cp
+clip
+0.937 GC
+N
+0 0 9 2 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 69.41127 740.41479] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+10 0 L
+10 2 L
+-1 2 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+-4 13 moveto 
+1 -1 scale
+(N=) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 23.6064 740.41479] CT
+N
+0 0 M
+0 2 L
+42 2 L
+42 0 L
+cp
+clip
+0.937 GC
+N
+0 0 42 2 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 23.6064 740.41479] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+43 0 L
+43 2 L
+-1 2 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 13 moveto 
+1 -1 scale
+(Permu) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 23.6064 740.41479] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+43 0 L
+43 2 L
+-1 2 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 29 moveto 
+1 -1 scale
+(tation# ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 23.6064 740.41479] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+43 0 L
+43 2 L
+-1 2 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+8 45 moveto 
+1 -1 scale
+(Test) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 189.5552 739.66554] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 189.5552 739.66554] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 4 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 4 0 0]
+  /Height 4
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1gYmnK&#R/V@dia^e!">/6-kTHO$C$IMGQY+Dq+ma^bKSO@f3!u!oUgq-6rcB[0b+5+7!Hu$HS!/[
+N_$1m3VQOn+h%%F]Atq(~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 189.5552 739.66554] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 -1 M
+38 -1 L
+38 5 L
+-1 5 L
+-1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 7 moveto 
+1 -1 scale
+(Per...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+N
+0 0 M
+0 6 L
+84 6 L
+84 0 L
+cp
+clip
+0.938 GC
+N
+0 0 84 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+N
+0 0 M
+0 6 L
+84 6 L
+84 0 L
+cp
+clip
+0.937 GC
+N
+0 0 84 6 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+N
+0 0 M
+0 6 L
+84 6 L
+84 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 5 L
+0 6 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+N
+0 0 M
+0 6 L
+84 6 L
+84 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+84 0 L
+83 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+N
+0 0 M
+0 6 L
+84 6 L
+84 0 L
+cp
+clip
+0.997 GC
+N
+84 0 M
+83 1 L
+83 6 L
+84 6 L
+84 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+N
+0 0 M
+0 6 L
+84 6 L
+84 0 L
+cp
+clip
+0.997 GC
+N
+1 5 M
+84 5 L
+84 6 L
+0 6 L
+1 5 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 5 L
+1 5 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+0.997 GC
+N
+1 1 M
+83 1 L
+82 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+0.699 GC
+N
+82 2 M
+83 1 L
+83 5 L
+82 5 L
+82 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 112.21255 739.66554] CT
+0.699 GC
+N
+83 4 M
+83 5 L
+1 5 L
+2 4 L
+83 4 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 113.71434 741.16403] CT
+N
+0 0 M
+0 2 L
+80 2 L
+80 0 L
+cp
+clip
+0.937 GC
+N
+0 0 80 2 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 115.21614 741.16403] CT
+N
+0 0 M
+0 1 L
+33 1 L
+33 0 L
+cp
+clip
+0.937 GC
+N
+0 0 33 1 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 115.21614 741.16403] CT
+N
+0 0 M
+0 1 L
+33 1 L
+33 0 L
+cp
+clip
+0.937 GC
+N
+0 0 33 1 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 115.96704 737.41781] CT
+[1 0 0 1 0 0] CT
+N
+-1 5 M
+-1 6 L
+32 6 L
+32 5 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gat%]bGp.j'SbLpFPup"%ME,61D&&mM3e@)`!]ZV/58iU'ZBf$&>s.M2XBq9J$6QZkOT42^Y_<gaKk_*
+)\+%52)>Yn.#OIjV.i!7L-nKEJ'fFH/F2hNm.^DECl[P_D+g&?<tfQln+XGg.#)0?Y3UA)D;4h[dng)G
+P9_U#1@h;VqS"&+iTYG6MB[qP30#EgJ2&_[W2b/'*0/'LT'+_koldrI<CI9AJ-FDE4\:gB/-3>blhd7e
+.8E/?^c%Yk$8`t"AYs0f]j<f%5tV,b%(t?^R$PS6k;,/,cf_X;CMogKY[.UNj`4c`?B*GoNpDBMl_T`G
+:9uYiiHi2\OqHl<IV*'rK^6t\!sJn7*<~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 115.21614 741.16403] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+34 0 L
+34 1 L
+-1 1 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 6 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 142.99943 741.16403] CT
+N
+0 0 M
+0 1 L
+38 1 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 1 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 142.99943 741.16403] CT
+N
+0 0 M
+0 1 L
+38 1 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 1 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 143.75033 737.41781] CT
+[1 0 0 1 0 0] CT
+N
+-1 5 M
+-1 6 L
+37 6 L
+37 5 L
+cp
+clip
+GS
+0 0 translate
+13 13 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 13
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [13 0 0 13 0 0]
+  /Height 13
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gat$r/['b6)#ZnGjqpEmZ^CLs<+[<l/0pFqh7JS2)pH)f0Gk'LR0+@;'H/'EkQDpYgtY'QDN&m;HHpTW
+qn17%hTt@,Ge`-U*1Ni$dfBV#RR9m"1rnY([d>nGRgpi3d6ug:!VLlUW[cVC^H5](f=J-4K_.2:_f>0h
+]BsdRfke\"4NDFM_sI-pqu%!2#2"$'ca)nX\ZdWCQ--Bh%"k9&R\mtVKEMBn=;VE^2OjMimWm[RFBYm"
+U*u$kUVl$j$&7<Fh/:VI/sh_HX]DLA@KEJWb2`#RAJmC#e+,U3JcN9A,RK)G#a<@5'^p_Y")LgK3KA`/
+<E5SbVZ];Ea(#gLA`4Cq0FS&/5+bE0@(5b'>SKW][_kB,G]=;(]K4u%TYl$OO>.`+I!%[[TYo+P"Th):
+U&~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 142.99943 741.16403] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+38 0 L
+38 1 L
+-1 1 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+18 6 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 748.65649] CT
+N
+0 0 M
+0 28 L
+293 28 L
+293 0 L
+cp
+clip
+0.938 GC
+N
+0 0 293 28 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 748.65649] CT
+N
+0 0 M
+0 28 L
+293 28 L
+293 0 L
+cp
+clip
+0.937 GC
+N
+0 0 293 28 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 20 L
+0 21 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 21 L
+293 21 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 20 M
+293 20 L
+293 21 L
+0 21 L
+1 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 20 L
+1 20 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 20 L
+291 20 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+0 -7 M
+6 -7 L
+6 21 L
+0 21 L
+0 -7 L
+cp
+clip
+0.699 GC
+N
+292 19 M
+292 20 L
+1 20 L
+2 19 L
+292 19 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+73 -7 M
+293 -7 L
+293 21 L
+73 21 L
+73 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 20 L
+0 21 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+73 -7 M
+293 -7 L
+293 21 L
+73 21 L
+73 -7 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+0.997 GC
+N
+293 0 M
+292 1 L
+292 21 L
+293 21 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+73 -7 M
+293 -7 L
+293 21 L
+73 21 L
+73 -7 L
+cp
+clip
+0.997 GC
+N
+1 20 M
+293 20 L
+293 21 L
+0 21 L
+1 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+73 -7 M
+293 -7 L
+293 21 L
+73 21 L
+73 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 20 L
+1 20 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+73 -7 M
+293 -7 L
+293 21 L
+73 21 L
+73 -7 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+0.699 GC
+N
+291 2 M
+292 1 L
+292 20 L
+291 20 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+73 -7 M
+293 -7 L
+293 21 L
+73 21 L
+73 -7 L
+cp
+clip
+0.699 GC
+N
+292 19 M
+292 20 L
+1 20 L
+2 19 L
+292 19 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 20 L
+0 21 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+293 0 L
+292 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+293 0 M
+292 1 L
+292 21 L
+293 21 L
+293 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 20 M
+293 20 L
+293 21 L
+0 21 L
+1 20 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+2 1 L
+2 20 L
+1 20 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.997 GC
+N
+1 1 M
+292 1 L
+291 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+291 2 M
+292 1 L
+292 20 L
+291 20 L
+291 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 753.90121] CT
+N
+6 9 M
+73 9 L
+73 21 L
+6 21 L
+6 9 L
+cp
+clip
+0.699 GC
+N
+292 19 M
+292 20 L
+1 20 L
+2 19 L
+292 19 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 748.65649] CT
+N
+0 0 M
+294 0 L
+294 29 L
+0 29 L
+0 0 L
+cp
+clip
+0.937 GC
+N
+6 -1 70 19 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 748.65649] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+294 0 L
+294 29 L
+0 29 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 13 moveto 
+1 -1 scale
+(Data Fusion) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 12.34291 760.64442] CT
+N
+0 0 M
+0 10 L
+289 10 L
+289 0 L
+cp
+clip
+0.937 GC
+N
+0 0 289 10 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+N
+0 0 M
+0 4 L
+27 4 L
+27 0 L
+cp
+clip
+0.937 GC
+N
+0 0 27 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+28 0 L
+28 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 13 moveto 
+1 -1 scale
+(Fea) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+28 0 L
+28 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 29 moveto 
+1 -1 scale
+(ture) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+28 0 L
+28 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 45 moveto 
+1 -1 scale
+(Red) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+28 0 L
+28 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 61 moveto 
+1 -1 scale
+(ucti) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+28 0 L
+28 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+6 77 moveto 
+1 -1 scale
+(on) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 30.3645 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+-1 0 M
+28 0 L
+28 4 L
+-1 4 L
+-1 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+13 93 moveto 
+1 -1 scale
+() t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 97.19456 761.39366] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 97.19456 761.39366] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 4 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 4 0 0]
+  /Height 4
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1gYmnK&#R/V@dia^e!">/6-kTHO$C$IMGQY+Dq+ma^bKSO@f3!u!oUgq-6rcB[0b+5+7!Hu$HS!/[
+N_$1m3VQOn+h%%F]Atq(~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 97.19456 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+39 0 L
+39 4 L
+0 4 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 7 moveto 
+1 -1 scale
+(Ope...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 179.7935 761.39366] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 179.7935 761.39366] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 4 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 4 0 0]
+  /Height 4
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1gYmnK&#R/V@dia^e!">/6-kTHO$C$IMGQY+Dq+ma^bKSO@f3!u!oUgq-6rcB[0b+5+7!Hu$HS!/[
+N_$1m3VQOn+h%%F]Atq(~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 179.7935 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+38 0 L
+38 4 L
+0 4 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+6 7 moveto 
+1 -1 scale
+(Vote) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 51.38969 762.14291] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+0.997 GC
+N
+0 0 38 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 51.38969 762.14291] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 26 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 26 0 0]
+  /Height 26
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gaub(9aZJ;*/<u6[h4ZD\.S7=;+*h#7U1`aI>kba(j\Fa]YOQ<k5mk\)!(AH=&kN_l-;6o+Ra`Mk@Ie>
+?2$,b!XLDMP.pDJH2\]e!<gGgq#G2J%;<H6AQ_3[J:dQ^'N]ZR$6l\;.1%DsplMitmui8^:")fL:dhRS
+Zk]d-JiJeN71rEbnLQ,F__@T+!C[]`P(Mnf4%KF)A*PmF_f'^:*!?fmF06pK[V_RT&3t2.eh#"q;.gdM
+&DS@*19n+~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 50.63879 762.89216] CT
+N
+1 0 M
+1 6 L
+23 6 L
+23 0 L
+cp
+clip
+0.997 GC
+N
+0 0 23 24 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 50.63879 762.89216] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 -1 M
+24 -1 L
+24 7 L
+1 7 L
+1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 17 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 51.38969 762.14291] CT
+N
+0 0 M
+0 7 L
+38 7 L
+38 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+38 0 L
+38 26 L
+0 26 L
+0 0 L
+cp
+1 1 M
+37 1 L
+37 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 67.90947 762.89216] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 6 L
+15 6 L
+15 0 L
+cp
+clip
+GS
+0 0 translate
+15 24 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 15
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [15 0 0 24 0 0]
+  /Height 24
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*D\S.,^jlk*YF^"1M0BJm.S%=*!s"#K!%e~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 139.99583 761.39366] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+0.937 GC
+N
+0 0 38 4 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 139.99583 761.39366] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 4 L
+38 4 L
+38 0 L
+cp
+clip
+GS
+0 0 translate
+38 4 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 38
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [38 0 0 4 0 0]
+  /Height 4
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1gYmnK&#R/V@dia^e!">/6-kTHO$C$IMGQY+Dq+ma^bKSO@f3!u!oUgq-6rcB[0b+5+7!Hu$HS!/[
+N_$1m3VQOn+h%%F]Atq(~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 139.99583 761.39366] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+39 0 L
+39 4 L
+0 4 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 7 moveto 
+1 -1 scale
+(Fea...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+N
+0 0 M
+0 38 L
+50 38 L
+50 0 L
+cp
+clip
+0.938 GC
+N
+0 0 50 38 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+N
+0 0 M
+0 38 L
+50 38 L
+50 0 L
+cp
+clip
+0.937 GC
+N
+0 0 50 38 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+N
+0 0 M
+0 38 L
+50 38 L
+50 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 37 L
+0 38 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+N
+0 0 M
+0 38 L
+50 38 L
+50 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+50 0 L
+49 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+N
+0 0 M
+0 38 L
+50 38 L
+50 0 L
+cp
+clip
+0.997 GC
+N
+50 0 M
+49 1 L
+49 38 L
+50 38 L
+50 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+N
+0 0 M
+0 38 L
+50 38 L
+50 0 L
+cp
+clip
+0.997 GC
+N
+1 37 M
+50 37 L
+50 38 L
+0 38 L
+1 37 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 37 L
+1 37 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+0.997 GC
+N
+1 1 M
+49 1 L
+48 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+0.699 GC
+N
+48 2 M
+49 1 L
+49 37 L
+48 37 L
+48 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 644.51135] CT
+0.699 GC
+N
+49 36 M
+49 37 L
+1 37 L
+2 36 L
+49 36 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 12.34291 646.00984] CT
+N
+0 0 M
+0 34 L
+46 34 L
+46 0 L
+cp
+clip
+0.937 GC
+N
+0 0 46 34 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 649.00683] CT
+N
+0 0 M
+0 10 L
+27 10 L
+27 0 L
+cp
+clip
+0.937 GC
+N
+0 0 27 10 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 649.00683] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 10 L
+27 10 L
+27 0 L
+cp
+clip
+GS
+0 0 translate
+27 10 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 27
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [27 0 0 10 0 0]
+  /Height 10
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1i5mi,b'LgD$2\DB!3"^.=d2'ZOLngJ38/HroJ03VC4'B,F0;Xo7[>-ZK#blV5@uRhH7iPY8S.-BH
+>&/3)>8pcLS.0LNStaeZ#WMmG0s5F<#fokacFrsN)d<GjANj]3Tp.=>YsjbH6I%T=osJ4dnB[)#0D4G"
+('~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 649.00683] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+27 0 L
+27 10 L
+0 10 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 10 moveto 
+1 -1 scale
+(L...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 660.99475] CT
+N
+0 0 M
+0 10 L
+28 10 L
+28 0 L
+cp
+clip
+0.937 GC
+N
+0 0 28 10 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 660.99475] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 10 L
+28 10 L
+28 0 L
+cp
+clip
+GS
+0 0 translate
+28 10 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 28
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [28 0 0 10 0 0]
+  /Height 10
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gau1iYmJ2g&;B).dtf4S2BiVHZ@Z27=N+$ej9OWZ3.1]%4S@8dQ'@H>p/6Q)Lk+@Z(h9]@;hR1;e2E:@
+XgL1PWsEhZW,4:M#ALso&1B9R(lp^#@PVoJ\bCP'66/J^cGPAJ8h!+>l6,Xf`&YjMRU)WtEbsF\&*j;-
+!r~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 660.99475] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 -1 M
+29 -1 L
+29 10 L
+0 10 L
+0 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 10 moveto 
+1 -1 scale
+(S...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+N
+0 0 M
+0 26 L
+50 26 L
+50 0 L
+cp
+clip
+0.938 GC
+N
+0 0 50 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+N
+0 0 M
+0 26 L
+50 26 L
+50 0 L
+cp
+clip
+0.88 GC
+N
+0 0 50 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+N
+0 0 M
+0 26 L
+50 26 L
+50 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+1 0 L
+1 25 L
+0 26 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+N
+0 0 M
+0 26 L
+50 26 L
+50 0 L
+cp
+clip
+0.699 GC
+N
+0 0 M
+50 0 L
+49 1 L
+0 1 L
+0 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+N
+0 0 M
+0 26 L
+50 26 L
+50 0 L
+cp
+clip
+0.997 GC
+N
+50 0 M
+49 1 L
+49 26 L
+50 26 L
+50 0 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+N
+0 0 M
+0 26 L
+50 26 L
+50 0 L
+cp
+clip
+0.997 GC
+N
+1 25 M
+50 25 L
+50 26 L
+0 26 L
+1 25 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+0.997 GC
+N
+1 1 M
+2 1 L
+2 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+0.997 GC
+N
+1 1 M
+49 1 L
+48 2 L
+1 2 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+0.699 GC
+N
+48 2 M
+49 1 L
+49 25 L
+48 25 L
+48 2 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 10.84111 607.04907] CT
+0.699 GC
+N
+49 24 M
+49 25 L
+1 25 L
+2 24 L
+49 24 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 12.34291 608.54756] CT
+N
+0 0 M
+0 22 L
+46 22 L
+46 0 L
+cp
+clip
+0.88 GC
+N
+0 0 46 22 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 617.53851] CT
+N
+0 0 M
+0 5 L
+25 5 L
+25 0 L
+cp
+clip
+0.88 GC
+N
+0 0 25 5 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 617.53851] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+25 0 L
+25 5 L
+0 5 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 13 moveto 
+1 -1 scale
+(Ver) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 617.53851] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+25 0 L
+25 5 L
+0 5 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 29 moveto 
+1 -1 scale
+(sio) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 617.53851] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+25 0 L
+25 5 L
+0 5 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+7 45 moveto 
+1 -1 scale
+(n ) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 18.35011 617.53851] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+0 0 M
+25 0 L
+25 5 L
+0 5 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+3 61 moveto 
+1 -1 scale
+(1.0) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 16.84831 611.54455] CT
+N
+0 0 M
+0 7 L
+30 7 L
+30 0 L
+cp
+clip
+0.88 GC
+N
+0 0 30 7 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 16.84831 611.54455] CT
+0 GC
+/Helvetica 19 F
+GS
+N
+0 0 M
+31 0 L
+31 7 L
+0 7 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+1 19 moveto 
+1 -1 scale
+(MV) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 16.84831 611.54455] CT
+0 GC
+/Helvetica 19 F
+GS
+N
+0 0 M
+31 0 L
+31 7 L
+0 7 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+2 41 moveto 
+1 -1 scale
+(PA) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 16.84831 611.54455] CT
+0 GC
+/Helvetica 19 F
+GS
+N
+0 0 M
+31 0 L
+31 7 L
+0 7 L
+0 0 L
+cp
+clip
+[1 0 0 1 0 0] CT
+5 63 moveto 
+1 -1 scale
+(NI#) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 15.34651 632.52342] CT
+N
+0 0 M
+0 26 L
+41 26 L
+41 0 L
+cp
+clip
+0.997 GC
+N
+0 0 41 26 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 15.34651 632.52342] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 26 L
+41 26 L
+41 0 L
+cp
+clip
+GS
+0 0 translate
+41 26 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 41
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [41 0 0 26 0 0]
+  /Height 26
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb!%09+$;*!(G9eG9SY*a@(Uf.kRT^8giU`CeHui#H!/\#R"5uaPFW<+bUXuBUYeLbFL+6`"7MT``bG4
+_bV!_,&U6lj#F4-qGi6'Ls$6H&t'\+N0j"Hs(FbnoNPNHoLiD_H#c\tLcNfmD-Qk>/^_bIgpA6e5e#IU
+oMo+ikBXdT6d1*FCJ4:V9dae63RC95M0@/bZm"Eacap:>9Acee6H!H"eofgC]i0W=Ls$L9W[^bB9j!4]
+ItI$4Mu~>
+
+%AXGEndBitmap
+GR
+GR
+GS
+[0.7509 0 0 0.74925 14.59561 633.27267] CT
+N
+1 0 M
+1 24 L
+26 24 L
+26 0 L
+cp
+clip
+0.997 GC
+N
+0 0 26 24 re
+f
+GR
+GS
+[0.7509 0 0 0.74925 14.59561 633.27267] CT
+0 GC
+/Helvetica 13 F
+GS
+N
+1 -1 M
+26 -1 L
+26 25 L
+1 25 L
+1 -1 L
+cp
+clip
+[1 0 0 1 0 0] CT
+4 17 moveto 
+1 -1 scale
+(...) t 
+GR
+GR
+GS
+[0.7509 0 0 0.74925 15.34651 632.52342] CT
+N
+0 0 M
+0 26 L
+41 26 L
+41 0 L
+cp
+clip
+0.677 GC
+N
+0 0 M
+41 0 L
+41 26 L
+0 26 L
+0 0 L
+cp
+1 1 M
+40 1 L
+40 25 L
+1 25 L
+1 1 L
+cp
+eofill
+GR
+GS
+[0.7509 0 0 0.74925 34.119 633.27267] CT
+[1 0 0 1 0 0] CT
+N
+0 0 M
+0 24 L
+15 24 L
+15 0 L
+cp
+clip
+GS
+0 0 translate
+15 24 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /Decode [0 1 0 1 0 1]
+  /BitsPerComponent 8
+  /Width 15
+  /ImageType 1
+  /DataSource Data
+  /ImageMatrix [15 0 0 24 0 0]
+  /Height 24
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"[*D\S.,^jlk*YF^"1M0BJm.S%=*!s"#K!%e~>
+
+%AXGEndBitmap
+GR
+GR
+showpage
+%%Trailer
+%%Pages: 1
+%%EOF

@@ -1,0 +1,238 @@
+This is a short guide on how to extend the decoding toolbox easily.
+
+Contents:
+1. How to use other classifiers
+2. How to plug-in a complete classification package
+3. How to use other transformations of classifier outputs
+4. How to extend the toolbox to different image analysis software than SPM
+5. How to use other design matrices than the standard ones
+6. How to use other feature selection methods
+7. How to use other parameter selection methods
+8. How to use other feature transformation methods than PCA
+
+===============================
+1. How to use other classifiers
+===============================
+
+The toolbox is equipped with libsvm, so it has support vector machines
+(SVMs) and support vector regression (SVR), and also offers linear and 
+non-linear classifiers (although we would recommend sticking to linear). 
+We also added what we called a "correlation classifier" which is the 
+classical pattern correlation algorithm used by Haxby (2001) in which the 
+higher of two pattern correlation coefficients determines the predicted 
+label of that sample, and another svm method that automatically does 
+implicit parameter selection (Newton SVM). There might be more classifiers 
+implemented by now, just check the folder decoding_software.
+
+Adding further classification or regression algorithms is very simple. All 
+you need to do is adjust one or two lines in two existing functions and 
+save them under a different name. Say your classifier is called "myclass" 
+and is able to perform classification and regression. Let's say it 
+contains four functions called "classtrain.m", "classtest.m", 
+"regresstrain.m" and "regresstest.m".
+
+First you need to add two functions to the toolbox, one for training and 
+one for testing. Best is to add them to the folder "software". Each 
+function should be named after your classifier (e.g. "myclass"). Their 
+names have to have the suffix "_train" and "_test", e.g. "myclass_train.m" 
+and "myclass_test.m".
+
+The train function needs the structure
+    model = myclass_train(labels_train,data_train,cfg)
+where cfg.decoding.train.classification.model_parameters is used for 
+passing model parameters (or "regression" instead of "classification" if 
+regression is used) and model is a struct variable that contains the 
+elements that are needed to later test the classifier (often containing a 
+function, e.g. weights). If your function creates more than one output, 
+gather them all and put them in the struct called "model".
+
+The test function needs the structure
+    decoding_out = myclass_test(labels_test,data_test,cfg,model)
+where cfg.decoding.test.classification.model_parameters is used for 
+passing model parameters (same as above) and decoding_out is a structure 
+that would normally contain the fields
+    decoding_out.predicted_labels (nx1 vector)
+    decoding_out.true_labels (nx1 vector)
+    decoding_out.decision_values (nx1 vector for pairwise, and nxm matrix 
+        for multiclass where m is the number of pairwise comparisons
+    decoding_out.model
+
+Having created both functions, you can enter the necessary parameters into 
+your main function, e.g.
+cfg.decoding.software = 'myclass';
+cfg.decoding.method = 'classification';
+cfg.decoding.train.classification.model_parameters = {param1, param2};
+cfg.decoding.test.classification.model_parameters = {param1, param2};
+
+Sometimes the software gets both training and test data in one step and 
+cannot do it separately. In that case, use 
+model = myclass_train simply to pass training data and training labels:
+model.data_train = data_train;
+model.labels_train = labels_train;
+and carry out the classification in myclass_test. Don't forget to update 
+the model variable here and place it in decoding_out.model.
+
+===================================================
+2. How to plug-in a complete classification package
+===================================================
+
+Say you already know what you are doing and want to use your own 
+classification tools on brain imaging data, and they include much cleverer 
+or more complex feature selection or parameter selection algorithms we 
+could ever implement. It should actually be simple to create such an 
+interface to The Decoding Toolbox. It depends what you want:
+Either you want to use our design function (where you can easily modify how 
+cross-validation is set up) or you even want to perform cross-validation 
+yourself.
+
+If you want to use our design function, i.e. data is separated in training 
+and test data by our toolbox, then simply create two functions as 
+described in point 1. myclass_train would pass the training data and 
+labels and myclass_test would carry out not only classification, but also 
+feature selection and whatever you want the function to perform. If you are 
+clever, you can pass all the parameters in the cfg (again see point 1) and 
+then can apply future changes at the level of your script only.
+
+If you do not want to use our design function, but only want TDT to loop 
+over ROIs or searchlights and write output, then you simply need to 
+select no data as training and all data as test data for our function to 
+work as an interface. In your script, set:
+    cfg.design.train = zeros(n,1);
+    cfg.design.test = ones(n,1);
+    cfg.design.label = [...] (here your labels are entered as vector)
+    cfg.design.set = 1;
+Since data_test and labels_test contains now all data, you can pass this 
+to myclass_test where the output is generated. Just set 
+    cfg.decoding.software = 'myclass';
+in your script. 
+
+If you now even don't want TDT to transform your 
+predicted_labels and true_labels etc. to other outputs (e.g. accuracy), 
+then simply pass decoding_out.opt as output and create your own transres 
+function to simply pass this single output further, i.e.
+    function output = transres_MYFUNCTION(decoding_out,varargin)
+    output = decoding_out.opt;
+and set cfg.results.output = {'MYFUNCTION'}; in your script.
+
+=========================================================
+3. How to use other transformations of classifier outputs
+=========================================================
+
+We provide a number of classifier outputs that can be used to evaluate the 
+performance of the classifier. All methods have in common that they 
+evaluate the predicted vs. the true labels. Standard methods are 'accuracy' 
+for classification and 'zcorr' (z-transformed correlation) for regression. 
+We also recommend trying out 'sensitivity' and 'specificity' which provide 
+separate performance estimates for each of both input labels, or 'AUC'
+which provides you with the Area Under the ROC-Curve. Check out the 
+function "decoding_transform_results.m" for more output methods.
+
+If you want to use other methods than the ones provided, the best way is 
+to create a separate function in the folder "transform_results". In 
+principle can you can also add it directly to the function 
+"decoding_transform_results", but in this case your function will might be 
+deleted if you update the toolbox and it is harder to distribute it to 
+others.
+
+The format of this function is as follows:
+  function output = transres_MYFUNCTION(decoding_out,chancelevel,cfg,model,data)
+where you should replace MYFUNCTION by your function name. To call it, use
+MYFUNCTION in cfg.results.output.
+E.g., if your transformation should be called 'superstar', call your method
+transres_superstar.m and in your script set 
+    cfg.results.output = 'superstar';
+to use it. In this case, your results will be saved to res_superstar.* in 
+the results folder and returned in results.superstar from decoding.m.
+"decoding_out" is a 1 x n_steps structure, normally with the fields 
+"predicted_labels" and "true_labels", "model", and "decision_values" where 
+n_steps is the number of decoding steps (e.g. cross-validation runs), and 
+where the values are written in a vector within each field. Simply perform 
+the transformation you would like to perform and return the output. If you 
+would like to generate an output which is larger than one numerical value, 
+then pass the output as a cell array or as a structure. Please note that 
+structures or cell arrays can in most cases not be written as images unless 
+the number of numerical output elements equals 1 or matches the number of 
+features used (e.g. number of voxels). Check transres_primal_SVM_weights 
+for an example.
+
+For advanced users, it is also possible to pass a class to do the 
+transformation, e.g. when a method is needed that depends on the subject 
+that is currently investigated.
+
+==========================================================================
+4. How to extend the toolbox to different image analysis software than SPM
+==========================================================================
+
+SPM2, SPM5 and SPM8 is already part of the toolbox. We would like to add 
+other software to it, so if you have a working solution (e.g. for 
+BrainVoyager), please send us the necessary files.
+
+If you want to add a new method, go to the folder "access_images". There 
+are five m-files. Create a folder named after your method (e.g. 
+"brainvoyager"). In that folder, create six functions with the same 
+name as those in "access_images", but with the suffix of  the method you 
+would like to add (e.g. "_brainvoyager").
+The necessary input and output is  explained in the functions in 
+"access_images", and for an example check out the functions of "spm8".
+
+==========================================================
+5. How to use other design matrices than the standard ones
+==========================================================
+
+In preparation, in the meantime, check out make_design_cv and try adapting
+the structure.
+
+=============================================
+6. How to use other feature selection methods
+=============================================
+
+*Filter methods*
+1. Add a new function to feature_selection\filter_subfunctions or even use 
+an existing Matlab function
+2. Function needs the structure
+    [ranks,ind] = myfunc(labels_train,vectors_train,cfg) 
+where ind provides the size of the ranking function (e.g. t-value for 
+t-scaling) and ranks provides the rank of each feature (with lower being 
+better). 
+3. Pass new function name using cfg.feature_selection.filter
+    
+*Embedded methods*
+1. Add a new function to feature_selection\embedded_subfunctions
+2. Function needs the same structure as RFE and needs to be a forward 
+    selection / backward elimination method
+3. Pass new function name using cfg.feature_selection.embedded and set 
+    cfg.feature_selection.direction = 'backward'; or = 'forward'; depending 
+    on the direction of the selection algorithm.
+
+*Optimization parameters*
+When you do feature_selection and scan a number of possible values to find 
+the best, you use some criterion to define which one is the best. For 
+example, if you want to use the maximum, set 
+cfg.feature_selection.optimization_criterion = 'max';
+If you want to use your own function, just enter it as string. The function 
+needs the format
+    optimal_value = myfunc(all_results)
+where all_results is a vector or matrix of e.g. accuracies across different 
+feature selection iterations using different feature sets and optimal value
+is the best of all_results according to a specific criterion.
+
+
+===============================================
+7. How to use other parameter selection methods
+===============================================
+
+*Passing parameter selection methods that don't use string input*
+In preparation
+
+*Optimization parameters*
+Same as for feature selection, but here set  
+cfg.parameter_selection.optimization_criterion = 'myfunc';
+
+===========================================================
+8. How to use other feature transformation methods than PCA
+===========================================================
+
+Although this is currently possible, we suggest you not to implement this 
+until we have decided which input and output should be used for such a 
+function. For that, we just need more experience with different transfor-
+mation methods until we have found the optimal structure.

@@ -1,0 +1,121 @@
+This is a collection of questions that might occur more often. This FAQ section should grow with time.
+
+Q1. I am an absolute beginner and have used the GUI or the one-line-of-code version. How can I 
+    inspect my results and know where the accuracy is significantly above chance?
+
+A1. If you ran a searchlight analysis, you can first visually inspect the results using e.g. 
+    MRIcron. The results file is usually called res_accuracy_minus_chance.img . Open a background 
+    image and load the results file as an overlay. Then in the top panel choose a minimum value of 
+    e.g. 5. Now increase this value until you see blob-like structures. These blobs might represent 
+    regions that contain information about your classification task.
+    To inspect your results statistically, there are two approaches explained on page 8 of our 
+    article: journal.frontiersin.org/article/10.3389/fninf.2014.00088/full
+    For the approach you chose, we recommend only visual inspection of individual results and 
+    interpretation at the second-level. If you only have one subject, then you may want to start 
+    looking into decoding_tutorial.m and move on to the intermediate-level use.
+
+
+Q2. I ran TDT, but all my results are 0. What does this mean?
+
+A2. It can mean a lot of things. 0 usually refers to chance-level when you ran "accuracy-minus-
+    chance". If you ran a lot of analyses and many of them ended up exactly at chance, then one 
+    likely cause is that for some reason your classifier always prefers one class over the other. 
+    The reason for that most often is that you made a mistake in the design specification. 
+    Set cfg.results.output = {'sensitivity_minus_chance','specificity_minus_chance'} and check 
+    whether this is the case (one should yield 50, the other -50). If you didn't make a mistake, 
+    then your classifier might have a reason to prefer one class over the other. Try using 
+    'AUC_minus_chance' as an output which takes into account classifier bias. This is fine in most 
+    cases when you are interested only in whether the brain region carries information and not 
+    in a classifier that is unbiased.
+
+
+Q3. My searchlight analysis takes several hours, compared to your example which takes only minutes.
+    I checked my script and all parameters seem to make sense. I'm not displaying the searchlights,
+    not using parameter selection or feature selection and the such, which I know make processing 
+    a lot slower. What am I doing wrong?
+
+A3. The duration of a searchlight analysis depends on a number of issues, but mostly on the number
+    of searchlights, the radius of the searchlight and the number of cross-validation steps.
+    Smaller searchlights are usually trained faster, unless the number of voxels in the searchlight
+    are equal or smaller than the number of samples that are entered into the analysis; it that case
+    the separating hyperplane is more difficult to find.
+    Sometimes, scaling can help a lot to speed up decoding. See help decoding_scale_data for details.
+    If you run classification in libsvm, try using cfg.decoding.method = 'classification_kernel' 
+    which can double or triple the speed of classification. If your voxel resolution is 2x2x2 mm or 
+    higher and you want a speed-up, consider resampling your data at a lower resolution, e.g. 3x3x3 mm.
+    In many cases, downsampling does not interfere much with the classification accuracies.
+    You could also consider reducing the size of your mask, e.g. limit yourself to gray-matter
+    voxels, only, but here the actual size of the searchlight will vary a lot depending on the position
+    of the searchlight, because voxels outside the mask are not considered.
+
+
+Q4. Some of my ROIs take extremely long to calculate while others run much faster. How is that possible? 
+
+A4. Some examples might be more difficult to separate than others. If your ROI is small, this is more
+    likely to be the case. If the time difference is very large, try using scaling and possibly reduce
+    outlier voxels as implemented in the scaling method. You may also use a smaller C (e.g. 0.001) which
+    often reduces processing time without any change in results. 
+
+
+Q5. I am running between-subject analyses, but other than your example I don't really have chunks, i.e.
+    there is no unique way how I should specify data for cross-validation. What now?
+
+A5. Often, you have implicit chunks, which are defined by matching between groups. For example, you want
+    to classify age or gender, so you can match subjects for these variables and create chunks. If this 
+    does not work, you can randomly assign pairs and keep them together which is a fast solution. Ideally,
+    you would run the make_design_boot function (check decoding_template_nobetas.m) which samples repeatedly
+    from the subjects.
+
+
+Q6. I want to run classification across subjects and have 70 subjects in one group and 30 in another.
+    I know that imbalances in training data are bad. How should I proceed?
+
+A6. In many cases, it is no problem if your data has a slight imbalance, but it can always be problematic 
+    and in your case it will be. Again, you can use make_design_boot, but it is slow. Alternatively, set 
+    cfg.design.unbalanced_data = 'ok' and calculate the AUC which should be guarded against this problem. 
+    Make sure to use balanced_accuracy as output (balanced for the number of samples in each class).
+
+
+Q7. I ran a searchlight analysis and did a group-level analysis, but none of my voxels were significant,
+    although I really expected to find something. Did I do anything wrong?
+
+A7. It is possible that you made a mistake, but this is difficult to find. First, check a decoding 
+    analysis with the same data where you would "have to" find something, e.g. buttonpress left hand vs. 
+    right hand, visual stimulation in the left vs. the right hemisphere, or even visual stimulation on vs. 
+    visual stimulation off. If you still find nothing and you used betas, probably you misspecified the 
+    onsets of your GLM analysis for creating the betas. It is also possible you were using the wrong data
+    or that data was not correctly assigned to the labels or chunks. Also, your mask might not even cover
+    the regions you expect to find.
+    If classification worked and you are sure that you made no mistake, then see if you can improve the 
+    quality of your data: Check the movement parameters and possibly include movement regressors into 
+    your subject-level design. Reduce the number of other regressors in your SPM design to a minimum (you 
+    can still check for correlations with other variables of no interest later). Try AUC rather than accuracy 
+    which can sometimes give you a slightly more sensitive value. Only in rare cases the optimization of 
+    classification parameters (e.g. C) brings you from chance performance to a reasonable number, so 
+    don't spend too much time on this step. Also feature selection can be very time consuming, so don't 
+    waste your time trying to find a pattern that is not in the data.
+    If all of this doesn't help: Maybe you have just bad data or your design was not efficient enough for
+    the variable you were interested in.
+
+
+Q8. I ran parameter optimization of C in libsvm, but the results were identical to running without 
+    parameter optimization. However, I read in the libsvm tutorial that this should greatly improve 
+    performance. How is that possible?
+
+A8. In most cases, the number of data samples n are much smaller than the number of features or 
+    dimensions p (e.g. voxels in a searchlight). That means that all data points will most likely 
+    end up as support vectors, but since C acts as a regularization parameter, it should 
+    begin to play a role for very small values of C, where it will choose a simpler (sparser) solution.
+    See "Hastie et al. (2004): The entire regularization path for the Support Vector Machine", 
+    Chapter 5.2 for details.
+
+Q9. When I try running the toolbox, Matlab crashes with a a Segmentation Error.
+
+A9. This is a problem related to the compilation of libsvm or another classifier you are using. It mostly 
+    occurs with Mac OS X. Try one of the following: First check if your design matrix is correct. If you 
+    don't have any training data or test data, libsvm crashes for Mac OS X. If your design is correct, 
+    then zip the libsvm folder of the current version and unzip the libsvm folder of version 3.12. See if 
+    you still get the result. If the error is still present, see if you can compile libsvm yourself or find 
+    a compiled version of it. Otherwise, please use a different classifier (don't forget to set 
+    cfg.decoding.method = 'classification' rather than 'classification_kernel') or a different operating
+    system.

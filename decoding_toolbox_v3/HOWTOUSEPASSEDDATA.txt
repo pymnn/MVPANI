@@ -1,0 +1,91 @@
+----------------------
+HOW TO USE PASSED DATA
+----------------------
+
+Why would you want to use passed_data rather than the routines provided
+by TDT to load your data from images?
+
+(a) You have reasons to import data yourself or already have it in the 
+    right format in Matlab, i.e. another import would actually be more
+  complicated.
+(b) You want to run multiple decodings in a go and only want to change
+  the design matrix, e.g. when you do permutation testing. This can save
+  a lot of time.
+(c) You don't use 3D-MRI data, but for example EEG data or multiple DTI
+  sequences or multimodal imaging which the toolbox is not optimized for.
+
+不明白The function fill_passed_data can be used to fill fields that you think 
+are not needed for your decoding or that you don't understand (for example 
+if you only pass data and want to do classical decoding on all data and 
+you are not interested in spatial information or doing searchlight decoding).
+
+REQUIRED fields for the struct passed_data are:
+.data:       n_samples x p_features (e.g. voxels) matrix of data that is
+             used for decoding. This is not all data from the data files,
+             but only the data that corresponds to the voxels that are
+             selected in .mask_index.
+             [In fact, .data can also be used with 4D data, where
+             dimension 1 makes up the samples (i.e. 
+             dim = [n_samples xdim ydim zdim]), but this should only be +
+             used if mask_index goes from 1:ndims . We use it in some 
+             demos, but do not recommend to use this option on a regular 
+             basis.]
+
+不明白.mask_index: Corresponds to the indices where results should be written
+             in the final 3D image, i.e. where there is brain. If spatial
+             information is not important, a vector of 1:p_features
+             should do.
+             Please note: These map the features of ALL input data
+             that correspond to the brain volume, but does NOT distinguish 
+             between multiple ROI masks. See .masks.mask_data{} below on 
+             how to pass ROI masks.
+
+.mask_index_each: Only needed for multiple ROI masks, otherwise filled 
+             automatically. If mask_index has entries other than those in 
+             all entries of mask_index_each combined, the additional data 
+             are loaded unnecessarily. If it is easier, the user can 
+             alternatively pass volumetric ROI masks loaded into 
+             .masks.mask_data
+
+.files:      Contains file information as in cfg.files, especially labels
+             (.files.label) and chunk information [e.g. run number]
+             (.files.chunk) as n_samplesx1 vector, and filenames of data
+             files (.files.name) and mask(s) (.files.mask) as n_samplesx1
+             cell array, with one filename as string in each cell
+
+.hdr:        A header from either a mask or a data file (if
+             cfg.files.mask{1} = 'all voxels') which is used for writing.
+             '' is ok if no header is needed for writing results (can be 
+             determined automatically if you pass a filename with
+             cfg.files.mask .
+
+.dim:        A 1x3 vector containing the original dimensionality of the
+             data. 注意This is only needed for searchlight analyses,
+             otherwise it is ok to pass [NaN NaN NaN]. If you don't know it,
+             but have filled cfg.files.mask with a file, then it should 
+             automatically fill it.
+
+.voxelsize:  A 1x3 vector specifying the voxelsize in mm (only needed
+             when option cfg.searchlight.spherical = 1)
+
+             
+OPTIONAL fields are:
+
+注意.masks.mask_data{}: each cell contains one binary mask of the same size
+                    as the original images containing the mask specified
+                    in .files.mask{}. This input is optional for
+                    passed_data. Remark: mask_data does not contain the
+                    indices as mask_index, but the same data as loaded
+                    from a maskfile.
+
+.loaded_results:    This is for advanced use only. Contains results that 
+                    were loaded from result files. Can be used to compute 
+                    transformations without redoing the full analysis, if 
+                    the output contains sufficient information to compute 
+                    transformations (e.g. predicted labels for calculating 
+                    accuracy). To use this, set 
+                    cfg.decoding.use_loaded_results = 1. See also
+                    read_resultdata.m.
+
+
+

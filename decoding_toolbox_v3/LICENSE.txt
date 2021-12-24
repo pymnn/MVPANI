@@ -1,0 +1,130 @@
+===============================
+The Decoding Toolbox (TDT) beta
+===============================
+
+Copyright (c) 2010-2015 Martin N. Hebart and Kai Goergen
+
+The Decoding Toolbox is licensed under the GNU General Public Licence as 
+published by the Free Software Foundation. The toolbox and/or any of its 
+parts that are not third party software may be adjusted and/or redistributed. 
+No part of it may be made publicly available in other programs without 
+acknowledgment of the authors (see below). Explicit agreement of the authors 
+is needed for commercial use of this software.
+
+If you use this software in a publication, please acknowledge its use by 
+adding the following (or similar) lines to your manuscript:
+
+"Multivariate classification analyses were performed using The Decoding 
+Toolbox (Hebart, Goergen et al., 2015)."
+
+The reference is:
+Martin N Hebart*, Kai Goergen* and John-Dylan Haynes (2015). The Decoding 
+Toolbox (TDT): A versatile software package for multivariate analyses of 
+functional imaging data. Front. Neuroinform. 8:88. doi: 10.3389/fninf.2014.00088.
+* Martin N Hebart and Kai Goergen contributed equally to this work.
+
+If you want to use parts of its code in publicly available software, please 
+add the following information to the code:
+
+"This code has been taken from The Decoding Toolbox (Hebart, Goergen et al., 2015)."
+
+The authors take no responsibility for any misuse of this software or any 
+programming mistakes.
+
+The toolbox contains the following third-party software:
+
+libsvm 3.17
+Newton SVM
+liblinear 1.94
+
+
+
+
+
+
+============================
+ADDITIONAL COPYRIGHT NOTICES
+============================
+
+-----------
+libsvm 3.17
+-----------
+
+Copyright (c) 2000-2013 Chih-Chung Chang and Chih-Jen Lin
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. Neither name of copyright holders nor the names of its contributors
+may be used to endorse or promote products derived from this software
+without specific prior written permission.
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+----------
+Newton SVM
+----------
+
+The sourcecode for NSVM Newton Support Vector Machine has been downloaded from http://research.cs.wisc.edu/dmi/svm/nsvm
+
+Authors:
+Glenn Fung
+Olvi L. Mangasarian
+
+Copyright:
+The software is free for academic use. For commercial use, please contact Olvi Mangasarian (olvi@cs.wisc.edu).
+
+---------
+LIBLINEAR
+---------
+
+Copyright (c) 2007-2013 The LIBLINEAR Project.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. Neither name of copyright holders nor the names of its contributors
+may be used to endorse or promote products derived from this software
+without specific prior written permission.
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
