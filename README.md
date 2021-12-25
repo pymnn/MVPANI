@@ -10,7 +10,7 @@ MVPANI: A Toolkit With Friendly Graphical User Interface for Multivariate Patter
 (3) The [SPM package](https://www.fil.ion.ucl.ac.uk/spm/) needs to be installed in MATLAB.
 
 # Getting started
-Once MVPANIV has been downloaded to your computer, use SetPath in MATLAB to add the entire MVPANIV1.0 folder to the path list as follows:
+Once MVPANI has been downloaded to your computer, use SetPath in MATLAB to add the entire MVPANIV1.0 folder to the path list as follows:
 
 (1) Unzip MVPANIV to a directory on your disk, assuming the directory is: `F:\MVPA\MVPANI_V1.0` after unzipping;
 
