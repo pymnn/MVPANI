@@ -24,7 +24,7 @@ Once MVPANI has been downloaded to your computer, use SetPath in MATLAB to add t
 
 ![image](https://user-images.githubusercontent.com/96582833/147314503-34cab316-8f61-4cae-82a4-73bd582733e5.png)
 
-All the documentation is in mannual [(view in github](https://gitee.com/pymnn/MVPANI/blob/main/mannual/) or [view in gitee)](https://gitee.com/pymnn/MVPANI/tree/main/mannual).
+All the documentation is in mannual [(view in github](https://github.com/pymnn/MVPANI/tree/main/mannual) or [view in gitee)](https://gitee.com/pymnn/MVPANI/tree/main/mannual).
 
 # Credits
 
